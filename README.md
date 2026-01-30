@@ -21,7 +21,7 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 ---
 
 ### 1. AI as a New Asset: The Engine of Growth
-### 🌐 The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
+### 🌐 Paper: The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
 
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339))
@@ -34,9 +34,15 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 
 
 ### 2. AI as Infrastructure: Commons or Walled Gardens?
+### 🌐 Paper: *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
+[![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13265)
+[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
 
-- **Paper:** `2509.13265v1.pdf`  
-- **Title:** *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
+[![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
+
+> Abstract:This paper conceptualizes Large Language Models (LLMs) as a form of mixed public goods within digital infrastructure, analyzing their economic properties through a comprehensive theoretical framework. We develop mathematical models to quantify the non-rivalry characteristics, partial excludability, and positive externalities of LLMs. Through comparative analysis of open-source and closed-source development paths, we identify systematic differences in resource allocation efficiency, innovation trajectories, and access equity. Our empirical research evaluates the spillover effects and network externalities of LLMs across different domains, including knowledge diffusion, innovation acceleration, and industry transformation. Based on these findings, we propose policy recommendations for balancing innovation incentives with equitable access, including public-private partnership mechanisms, computational resource democratization, and governance structures that optimize social welfare. This interdisciplinary approach contributes to understanding the economic nature of foundation AI models and provides policy guidance for their development as critical digital infrastructure
+
 
 **Overview:**  
 If AI is capital, who should own it?  
