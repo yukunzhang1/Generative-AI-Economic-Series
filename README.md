@@ -16,27 +16,22 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 **(The Nature of Intelligence)**
 
 **Core Question:**  
-Is AI a new form of capital, or a new kind of public infrastructure?
-
-This part establishes the **theoretical foundation** of the series by redefining the production function and the drivers of growth.
+Is AI a new form of capital, or a new kind of public infrastructure? This part establishes the **theoretical foundation** of the series by redefining the production function and the drivers of growth.
 
 ---
 
 ### 1. AI as a New Asset: The Engine of Growth
+### 🌐 The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
 
-- **Paper:** `AI_增长函数_arxiv.pdf`  
-- **Title:** *The Economics of Digital Intelligence Capital: Endogenous Depreciation and Structural Jevons Paradox*
+[![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339))
+[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
 
-**Overview:**  
-Why does falling computation cost lead to *higher*, not lower, total AI investment?  
-This paper introduces **Digital Intelligence Capital (DIC)** as a novel asset class. It formalizes two defining forces of the AI economy:
+[![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
 
-- the **Red Queen Effect** — innovate continuously or face rapid depreciation;  
-- the **Structural Jevons Paradox** — efficiency gains trigger disproportionate demand expansion.
+> Abstract: This paper develops a micro-founded economic theory of the AI industry by modeling large language models as a distinct asset class-Digital Intelligence Capital-characterized by data-compute complementarities, increasing returns to scale, and relative (rather than absolute) valuation. We show that these features fundamentally reshape industry dynamics along three dimensions. First, because downstream demand depends on relative capability, innovation by one firm endogenously depreciates the economic value of rivals' existing capital, generating a persistent innovation pressure we term the Red Queen Effect. Second, falling inference prices induce downstream firms to adopt more compute-intensive agent architectures, rendering aggregate demand for compute super-elastic and producing a structural Jevons paradox. Third, learning from user feedback creates a data flywheel that can destabilize symmetric competition: when data accumulation outpaces data decay, the market bifurcates endogenously toward a winner-takes-all equilibrium. We further characterize conditions under which expanding upstream capabilities erode downstream application value (the Wrapper Trap). A calibrated agent-based model confirms these mechanisms and their quantitative implications. Together, the results provide a unified framework linking intelligence production upstream with agentic demand downstream, offering new insights into competition, scalability, and regulation in the AI economy.
 
-Together, they provide a new mathematical language for understanding AI-driven economic growth.
 
----
 
 ### 2. AI as Infrastructure: Commons or Walled Gardens?
 
