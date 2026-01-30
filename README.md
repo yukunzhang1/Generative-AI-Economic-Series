@@ -75,25 +75,24 @@ When the marginal cost of content creation approaches zero, how do labor markets
 
 
 ## ⚖️ Part III — Information Ecology and Micro-Level Games  
-**(The Information Ecology)**
 
 **Core Question:**  
-In an age of information abundance, how do we rebuild trust and prevent manipulation?
-
-This part dives into **micro-level frictions**, governance, and strategic behavior.
-
----
+In an age of information abundance, how do we rebuild trust and prevent manipulation?This part dives into **micro-level frictions**, governance, and strategic behavior.
 
 ### 5. The Lemons Market for Information: Pollution and Trust Collapse
 
-- **Paper:** `2509.13729v2.pdf`  
-- **Title:** *The Economics of Information Pollution in the Age of AI: General Equilibrium and Welfare Analysis*
+### ⚖️Paper: The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design
 
-**Overview:**  
-What happens when producing falsehoods becomes cheaper than verifying truth?  
-This paper frames AI as an **asymmetric technology shock** that favors low-quality content (*lemons*) over high-quality content (*peaches*). It introduces the **Information Pollution Index (IPI)** and warns of a looming *tragedy of the digital commons*.
+[![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.13729-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13729)
+[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Info-Pollution-AI)
 
----
+[![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
+[![Tencent-CGS](https://img.shields.io/badge/🏆%20%20Award-Tencent--CGS%20Academic%20Conf-orange.svg)](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/)
+
+> **Abstract:** The advent of Large Language Models (LLMs) represents a fundamental shock to the economics of information production. By asymmetrically collapsing the marginal cost of generating low-quality, synthetic content while leaving high-quality production costly, AI systematically incentivizes information pollution. This paper develops a general equilibrium framework to analyze this challenge. We model the strategic interactions among a monopolistic platform, profit-maximizing producers, and utility-maximizing consumers in a three-stage game. The core of our model is a production technology with differential elasticities of substitution (\sigma_L > 1 > \sigma_H), which formalizes the insight that AI is a substitute for labor in low-quality production but a complement in high-quality creation. We prove the existence of a unique "Polluted Information Equilibrium" and demonstrate its inefficiency, which is driven by a threefold market failure: a production externality, a platform governance failure, and an information commons externality. Methodologically, we derive a theoretically-grounded Information Pollution Index (IPI) with endogenous welfare weights to measure ecosystem health. From a policy perspective, we show that a first-best outcome requires a portfolio of instruments targeting each failure. Finally, considering the challenges of deep uncertainty, we advocate for an adaptive governance framework where policy instruments are dynamically adjusted based on real-time IPI readings, offering a robust blueprint for regulating information markets in the age of AI.
+
+
 
 ### 6. New Forms of Rent-Seeking: Algorithmic Manipulation
 
