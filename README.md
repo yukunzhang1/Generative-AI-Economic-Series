@@ -107,14 +107,14 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 ### 6. New Forms of Rent-Seeking: Algorithmic Manipulation
 
-- **Paper:** `2502.12956v1.pdf`  
-- **Title:** *AI-Enabled Rent-Seeking: How Generative AI Reshapes Market Transparency*
+### 🧩 AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency
 
-**Overview:**  
-Is increased transparency an illusion?  
-This work reveals the **double-edged nature of AI**: while it lowers traditional information barriers, it enables new rent-seeking strategies through mass misinformation, algorithmic interference, and signal manipulation—an arms race where “the devil grows wiser.”
+[![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.12956-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12956))
+[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
 
----
+> **Abstract:** The rapid advancement of generative artificial intelligence (AI) has transformed the information environment, creating both opportunities and challenges. This paper explores how generative AI influences economic rent-seeking behavior and its broader impact on social welfare. We develop a dynamic economic model involving multiple agents who may engage in rent-seeking activities and a regulator aiming to mitigate social welfare losses. Our analysis reveals a dual effect of generative AI: while it reduces traditional information rents by increasing transparency, it also introduces new forms of rent-seeking, such as information manipulation and algorithmic interference. These behaviors can lead to decreased social welfare by exacerbating information asymmetries and misallocating resources. To address these challenges, we propose policy interventions, including taxation and regulatory measures. This study provides a new perspective on the economic implications of generative AI, offering valuable insights for policymakers and laying a foundation for future research on regulating AI-driven economic behaviors.
+
 
 ### 7. Rebuilding Contracts: Using AI Against Asymmetry
 
@@ -144,24 +144,8 @@ Together, these seven papers form a **coherent economic theory of generative AI*
 
 
 
-## 🛠️ Technical Stack
-<div align="left">
-    <img src="https://img.shields.io/badge/Stata-0A50A1?style=for-the-badge&logo=stata&logoColor=white" />
-    <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
-    <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
-</div>
 
 
-
----
-
-## 📊 GitHub Stats
-<p align="center">
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=ty998703&show_icons=true&theme=transparent" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ty998703&layout=compact&theme=transparent" />
-</p>
-
----
 
 ## 📬 Contact
 * **Email**: [215010026@link.cuhk.edu.cn](215010026@link.cuhk.edu.cn)
