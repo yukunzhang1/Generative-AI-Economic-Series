@@ -5,7 +5,7 @@ This series brings together seven cutting-edge research papers to fill this void
 
 <div align="center">
 
-# 🛠️ Artificial Intelligence & Economics Research
+# 🛠️ Artificial Intelligence & Economics Research Series
 
 As Generative AI reshapes the world at an exponential pace, we face a stark academic vacuum: traditional economic models struggle to explain a new economic species that boasts zero marginal cost and autonomous creativity. This series brings together seven cutting-edge research papers to fill this void. This is not merely a collection of isolated studies; it is an attempt to reconstruct the edifice of economics for the AI era. We move beyond viewing AI simply as a productivity tool, redefining it instead as a new form of capital and a pervasive ecological environment. By organically connecting these seven works, we establish a theoretical framework that spans macro-dynamics, meso-market structures, and micro-mechanisms, answering three fundamental questions about our future
 
