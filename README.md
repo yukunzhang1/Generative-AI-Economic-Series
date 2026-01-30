@@ -44,12 +44,6 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 > Abstract:This paper conceptualizes Large Language Models (LLMs) as a form of mixed public goods within digital infrastructure, analyzing their economic properties through a comprehensive theoretical framework. We develop mathematical models to quantify the non-rivalry characteristics, partial excludability, and positive externalities of LLMs. Through comparative analysis of open-source and closed-source development paths, we identify systematic differences in resource allocation efficiency, innovation trajectories, and access equity. Our empirical research evaluates the spillover effects and network externalities of LLMs across different domains, including knowledge diffusion, innovation acceleration, and industry transformation. Based on these findings, we propose policy recommendations for balancing innovation incentives with equitable access, including public-private partnership mechanisms, computational resource democratization, and governance structures that optimize social welfare. This interdisciplinary approach contributes to understanding the economic nature of foundation AI models and provides policy guidance for their development as critical digital infrastructure
 
 
-**Overview:**  
-If AI is capital, who should own it?  
-This paper studies large language models as **quasi-public goods**, comparing open-source (e.g., LLaMA) and closed-source (e.g., GPT) regimes. It proposes a **Public Goods Index (PGI)** to quantify “publicness” and explores how societies can balance **innovation incentives** with **equitable access** in building digital infrastructure.
-
----
-
 ## 🏭 Part II — Market Fragmentation and Reconstruction  
 **(Market Transformation)**
 
