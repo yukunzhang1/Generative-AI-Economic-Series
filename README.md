@@ -13,7 +13,7 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 ---
 
 ## 📚 Part I — The Nature of Intelligence & Macroeconomic Dynamics  
-**(The Nature of Intelligence)**
+
 
 **Core Question:**  
 Is AI a new form of capital, or a new kind of public infrastructure? This part establishes the **theoretical foundation** of the series by redefining the production function and the drivers of growth.
@@ -45,26 +45,22 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 
 
 ## 🏭 Part II — Market Fragmentation and Reconstruction  
-**(Market Transformation)**
+
 
 **Core Question:**  
-When the marginal cost of content creation approaches zero, how do labor markets and platforms fracture?
+When the marginal cost of content creation approaches zero, how do labor markets and platforms fracture? This part focuses on **meso-level market shocks** and structural transitions.
 
-This part focuses on **meso-level market shocks** and structural transitions.
-
----
 
 ### 3. Supply-Side Shock: The Hollowing Out of the Middle Class
 
-- **Paper:** `Generative_AI_as_a_Non_Convex_Supply_Shock.pdf`  
-- **Title:** *Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis*
+### 🧩 Paper: Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis
 
-**Overview:**  
-AI is not just a tool—it is a brutal supply-side revolution.  
-This paper models generative AI as a **non-convex technological shock** that causes *market bifurcation*:  
-low-end creative work is automated, humans retreat to high-end semantic niches, and the **middle tier collapses**. The result is a theoretical warning about *middle-class hollowing* in creative labor markets.
+[![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.12488-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12488))
+[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
 
----
+> **Abstract:**The diffusion of Generative AI (GenAI) constitutes a supply shock of a fundamentally different nature: while marginal production costs approach zero, content generation creates congestion externalities through information pollution. We develop a three-layer general equilibrium framework to study how this non-convex technology reshapes market structure, transition dynamics, and social welfare. In a static vertical differentiation model, we show that the GenAI cost shock induces a kinked production frontier that bifurcates the market into exit, AI, and human segments, generating a ``middle-class hollow'' in the quality distribution. To analyze adjustment paths, we embed this structure in a mean-field evolutionary system and a calibrated agent-based model with bounded rationality. The transition to the AI-integrated equilibrium is non-monotonic: rather than smooth diffusion, the economy experiences a temporary ecological collapse driven by search frictions and delayed skill adaptation, followed by selective recovery. Survival depends on asymmetric skill reconfiguration, whereby humans retreat from technical execution toward semantic creativity. Finally, we show that the welfare impact of AI adoption is highly sensitive to pollution intensity: low congestion yields monotonic welfare gains, whereas high pollution produces an inverted-U relationship in which further AI expansion reduces total welfare. These results imply that laissez-faire adoption can be inefficient and that optimal governance must shift from input regulation toward output-side congestion management.
+
 
 ### 4. Platform Economics: The Trilemma of Two-Sided Markets
 
