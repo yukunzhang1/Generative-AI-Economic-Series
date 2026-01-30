@@ -1,3 +1,141 @@
+# 🌌 Generative-AI-Economic-Series
+
+**Reconstructing Economic Growth, Market Structure, and Information Contracts in the Age of Generative AI**
+
+As generative AI reshapes the world at an exponential pace, traditional economic theories struggle to explain a new economic species characterized by *near-zero marginal cost* and *autonomous creativity*. This research series brings together **seven tightly connected papers** that collectively aim to rebuild the foundations of economics for the AI era.
+
+Rather than treating AI as a mere productivity tool, this series reconceptualizes it as **a new form of capital** and **a pervasive economic ecosystem**. Spanning **macro dynamics**, **meso-level market structures**, and **micro-level strategic interactions**, the series addresses three fundamental questions:
+
+- *What is AI in an economic sense?*
+- *How does AI restructure markets and labor?*
+- *How can trust, incentives, and contracts survive in an AI-driven information environment?*
+
+---
+
+## 📚 Part I — The Nature of Intelligence & Macroeconomic Dynamics  
+**(The Nature of Intelligence)**
+
+**Core Question:**  
+Is AI a new form of capital, or a new kind of public infrastructure?
+
+This part establishes the **theoretical foundation** of the series by redefining the production function and the drivers of growth.
+
+---
+
+### 1. AI as a New Asset: The Engine of Growth
+
+- **Paper:** `AI_增长函数_arxiv.pdf`  
+- **Title:** *The Economics of Digital Intelligence Capital: Endogenous Depreciation and Structural Jevons Paradox*
+
+**Overview:**  
+Why does falling computation cost lead to *higher*, not lower, total AI investment?  
+This paper introduces **Digital Intelligence Capital (DIC)** as a novel asset class. It formalizes two defining forces of the AI economy:
+
+- the **Red Queen Effect** — innovate continuously or face rapid depreciation;  
+- the **Structural Jevons Paradox** — efficiency gains trigger disproportionate demand expansion.
+
+Together, they provide a new mathematical language for understanding AI-driven economic growth.
+
+---
+
+### 2. AI as Infrastructure: Commons or Walled Gardens?
+
+- **Paper:** `2509.13265v1.pdf`  
+- **Title:** *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
+
+**Overview:**  
+If AI is capital, who should own it?  
+This paper studies large language models as **quasi-public goods**, comparing open-source (e.g., LLaMA) and closed-source (e.g., GPT) regimes. It proposes a **Public Goods Index (PGI)** to quantify “publicness” and explores how societies can balance **innovation incentives** with **equitable access** in building digital infrastructure.
+
+---
+
+## 🏭 Part II — Market Fragmentation and Reconstruction  
+**(Market Transformation)**
+
+**Core Question:**  
+When the marginal cost of content creation approaches zero, how do labor markets and platforms fracture?
+
+This part focuses on **meso-level market shocks** and structural transitions.
+
+---
+
+### 3. Supply-Side Shock: The Hollowing Out of the Middle Class
+
+- **Paper:** `Generative_AI_as_a_Non_Convex_Supply_Shock.pdf`  
+- **Title:** *Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis*
+
+**Overview:**  
+AI is not just a tool—it is a brutal supply-side revolution.  
+This paper models generative AI as a **non-convex technological shock** that causes *market bifurcation*:  
+low-end creative work is automated, humans retreat to high-end semantic niches, and the **middle tier collapses**. The result is a theoretical warning about *middle-class hollowing* in creative labor markets.
+
+---
+
+### 4. Platform Economics: The Trilemma of Two-Sided Markets
+
+- **Paper:** `2410.13101v2.pdf`  
+- **Title:** *The Impact of Generative AI on Content Platforms: A Two-Sided Market with Multi-Dimensional Quality Heterogeneity*
+
+**Overview:**  
+How should platforms respond to the flood of AI-generated content?  
+This paper introduces the **Policy Trilemma**: platforms cannot simultaneously maximize **allocative efficiency**, **distributional fairness**, and **ecosystem sustainability**. Agent-based simulations show that without intervention, AI may trigger *model collapse* and excessive displacement of human creators.
+
+---
+
+## ⚖️ Part III — Information Ecology and Micro-Level Games  
+**(The Information Ecology)**
+
+**Core Question:**  
+In an age of information abundance, how do we rebuild trust and prevent manipulation?
+
+This part dives into **micro-level frictions**, governance, and strategic behavior.
+
+---
+
+### 5. The Lemons Market for Information: Pollution and Trust Collapse
+
+- **Paper:** `2509.13729v2.pdf`  
+- **Title:** *The Economics of Information Pollution in the Age of AI: General Equilibrium and Welfare Analysis*
+
+**Overview:**  
+What happens when producing falsehoods becomes cheaper than verifying truth?  
+This paper frames AI as an **asymmetric technology shock** that favors low-quality content (*lemons*) over high-quality content (*peaches*). It introduces the **Information Pollution Index (IPI)** and warns of a looming *tragedy of the digital commons*.
+
+---
+
+### 6. New Forms of Rent-Seeking: Algorithmic Manipulation
+
+- **Paper:** `2502.12956v1.pdf`  
+- **Title:** *AI-Enabled Rent-Seeking: How Generative AI Reshapes Market Transparency*
+
+**Overview:**  
+Is increased transparency an illusion?  
+This work reveals the **double-edged nature of AI**: while it lowers traditional information barriers, it enables new rent-seeking strategies through mass misinformation, algorithmic interference, and signal manipulation—an arms race where “the devil grows wiser.”
+
+---
+
+### 7. Rebuilding Contracts: Using AI Against Asymmetry
+
+- **Paper:** `2502.12969v1.pdf`  
+- **Title:** *Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard*
+
+**Overview:**  
+The story does not end in pessimism.  
+This paper shows how AI-generated high-precision signals can *repair* principal–agent relationships. By enabling **dynamic and fine-grained contracts**, AI can help identify hidden types and effort levels, mitigating **adverse selection** and **moral hazard**, and restoring market efficiency.
+
+---
+
+## 🔭 Vision of the Series
+
+Together, these seven papers form a **coherent economic theory of generative AI**—from growth engines and infrastructure design, through market bifurcation and platform governance, down to information pollution and contract reconstruction.
+
+This is not just AI economics.  
+It is an attempt to define the **economic logic of the AI era**.
+
+
+
+
+
 # Generative-AI-Economic-Series
 As Generative AI reshapes the world at an exponential pace, we face a stark academic vacuum: traditional economic models struggle to explain a new economic species that boasts zero marginal cost and autonomous creativity. This series brings together seven cutting-edge research papers to fill this void. This is not merely a collection of isolated studies; it is an attempt to reconstruct the edifice of economics for the AI era. We move beyond viewing AI simply as a productivity tool, redefining it instead as a new form of capital and a pervasive ecological environment. By organically connecting these seven works, we establish a theoretical framework that spans macro-dynamics, meso-market structures, and micro-mechanisms, answering three fundamental questions about our future.
 
