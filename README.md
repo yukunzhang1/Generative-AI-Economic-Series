@@ -129,9 +129,7 @@ https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/The%20Imp
 **Core Question:**  
 In an age of information abundance, how do we rebuild trust and prevent manipulation?This part dives into **micro-level frictions**, governance, and strategic behavior.
 
-### 5. The Lemons Market for Information: Pollution and Trust Collapse
-
-### ⚖️ Paper 5: The Economics of Information Pollution in the Age of AI  
+### ⚖️ Paper 5: *The Economics of Information Pollution in the Age of AI*  
 ### *General Equilibrium, Welfare, and Policy Design*
 
 [![Status](https://img.shields.io/badge/✅%20Status-Accepted%20%26%20Presented-success.svg)](#)
@@ -144,21 +142,17 @@ https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Poster%20
 [![Best%20Paper](https://img.shields.io/badge/🏆%20Best%20Paper%20Award-NUS%20%7C%20Technology%20for%20Good-gold.svg)](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/)
 
 > **Abstract:**  
-> The advent of Large Language Models (LLMs) represents a fundamental shock to the economics of information production. By asymmetrically collapsing the marginal cost of generating low-quality, synthetic content while leaving high-quality production costly, AI systematically incentivizes information pollution. This paper develops a general equilibrium framework to analyze this challenge. We model the strategic interactions among a monopolistic platform, profit-maximizing producers, and utility-maximizing consumers in a three-stage game.  
->  
-> The core of our model is a production technology with differential elasticities of substitution  
-> $(\sigma_L > 1 > \sigma_H)$, formalizing the insight that AI is a substitute for labor in low-quality production but a complement in high-quality creation. We prove the existence of a unique **Polluted Information Equilibrium** and demonstrate its inefficiency, driven by three interacting market failures: a production externality, a platform governance failure, and an information commons externality.  
->  
-> Methodologically, we derive a theoretically grounded **Information Pollution Index (IPI)** with endogenous welfare weights to measure ecosystem health. From a policy perspective, we show that a first-best outcome requires a portfolio of instruments targeting each failure. Accounting for deep uncertainty, we further advocate an **adaptive governance framework** in which policy instruments are dynamically adjusted based on real-time IPI readings, offering a robust blueprint for regulating information markets in the age of AI.
+> The advent of Large Language Models (LLMs) constitutes a fundamental shock to the economics of information production by asymmetrically collapsing the marginal cost of low-quality synthetic content while leaving high-quality production costly, thereby systematically incentivizing information pollution. This paper develops a general equilibrium framework to analyze how such pollution emerges and persists through the strategic interaction of a monopolistic platform, profit-maximizing producers, and utility-maximizing consumers in a three-stage game. We formalize AI as a production technology with differential elasticities of substitution $(\sigma_L > 1 > \sigma_H)$, capturing its role as a substitute for labor in low-quality production and a complement in high-quality creation, and prove the existence of a unique **Polluted Information Equilibrium** characterized by inefficiency. This inefficiency arises from a threefold market failure: a production externality, a platform governance failure, and an information commons externality. Methodologically, we introduce a theoretically grounded **Information Pollution Index (IPI)** with endogenous welfare weights to measure ecosystem health, and show that achieving a first-best outcome requires a coordinated portfolio of policy instruments. Recognizing deep uncertainty, we further advocate an **adaptive governance framework** in which regulatory tools are dynamically adjusted in response to real-time IPI signals, offering a robust blueprint for governing information markets in the age of AI.
 
-📌 **Conference Poster & Recognition:**  
-- 🖼️ *Poster: AI Information Pollution — Technology for Good: Driving Social Impact*  
+📌 **Conference Poster & Recognition**  
+- 🖼️ *AI Information Pollution — Technology for Good: Driving Social Impact*  
   👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Poster%20AI%20Pollution%20Conference_Tech%20for%20Good_Driving%20Social%20Impact.pdf)  
   👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/Poster%20AI%20Pollution%20Conference_Tech%20for%20Good_Driving%20Social%20Impact.pdf)
 
-🏆 **Award:**  
+🏆 **Award**  
 - **Best Research Paper Award**, *Tencent–CGS Academic Conference 2025 (NUS)*  
   *Theme: Technology for Good — Driving Social Impact*
+
 
 
 
