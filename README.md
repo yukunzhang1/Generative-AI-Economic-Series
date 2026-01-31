@@ -99,7 +99,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13729-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13729)
 [![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Info-Pollution-AI)
-👉 [Download Poster (PDF)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/Poster%20AI%20Pollution%20Conference_Tech%20for%20Good.pdf)
+
 
 
 [![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
