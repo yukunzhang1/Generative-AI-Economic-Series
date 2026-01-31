@@ -1,14 +1,18 @@
-：# 🌌 Generative-AI-Economic-Series
+# 🌌 Generative-AI-Economic-Series
 
 **Reconstructing Economic Growth, Market Structure, and Information Contracts in the Age of Generative AI**
+
+*A unified economic framework for understanding Generative AI as capital, infrastructure, and strategic actor.*
 
 As generative AI reshapes the world at an exponential pace, traditional economic theories struggle to explain a new economic species characterized by *near-zero marginal cost* and *autonomous creativity*. This research series brings together **seven tightly connected papers** that collectively aim to rebuild the foundations of economics for the AI era.
 
 Rather than treating AI as a mere productivity tool, this series reconceptualizes it as **a new form of capital** and **a pervasive economic ecosystem**. Spanning **macro dynamics**, **meso-level market structures**, and **micro-level strategic interactions**, the series addresses three fundamental questions:
 
 - *What is AI in an economic sense?*
-- *How does AI restructure markets and labor?*
+- *How does AI restructure markets, platforms, and labor?*
 - *How can trust, incentives, and contracts survive in an AI-driven information environment?*
+
+
 
 
 
