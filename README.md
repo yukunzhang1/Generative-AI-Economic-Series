@@ -30,7 +30,7 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 The seven papers form a coherent theoretical pipeline. The diagram below illustrates how core concepts, model structures, and policy implications flow across the series — from macro foundations through market reconstruction down to information contracts.
 
 <p align="center">
-  <img src="paper_architecture_diagram.png" alt="Paper Relationship Architecture" width="100%"/>
+  <img src="paper_architecture_diagram(1).png" alt="Paper Relationship Architecture" width="100%"/>
 </p>
 
 
