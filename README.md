@@ -16,16 +16,23 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 
 
 
-# 🔈 Latest News
+## 🔈 Latest News
 
-- ✅ **November 2025** – Our paper **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** won the **Best Research Paper Award** at the **NUS Academic Conference on Technology for Good: Driving Social Impact**.  
-  📄 Proceedings: [Tencent–CGS Academic Conference 2025, Volume I](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
+> A quick timeline of recent milestones across the series.
 
-- ✅ **October 2025** – Our paper **[Beyond Private or Public: LLMs as Quasi-Public Goods](https://arxiv.org/abs/2509.13265)** was accepted by the **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
+- **🏆 Nov 2025 — Best Paper Award (NUS | Technology for Good)**  
+  Our paper **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** won the **Best Research Paper Award** at the **NUS Academic Conference on Technology for Good: Driving Social Impact**.  
+  ↳ 📄 Proceedings: **[Tencent–CGS Academic Conference 2025, Volume I](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)**
 
-- ✅ **October 2025** – Our paper **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** was accepted by the **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
+- **🎤 Oct 2025 — Conference Acceptance (UNU Macau AI Conference 2025)**  
+  **[Beyond Private or Public: LLMs as Quasi-Public Goods](https://arxiv.org/abs/2509.13265)** was accepted by **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
 
-- 📢 **April 2025** – **[How Generative AI Reshapes Principal–Agent Relationships: Mitigating Adverse Selection and Moral Hazard](https://ieeexplore.ieee.org/document/11197624)** was accepted by the **International Conference on AI and the Digital Economy (CADE 2025)**.
+- **🎤 Oct 2025 — Conference Acceptance (UNU Macau AI Conference 2025)**  
+  **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** was accepted by **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
+
+- **📢 Apr 2025 — Conference Acceptance (CADE 2025)**  
+  **[How Generative AI Reshapes Principal–Agent Relationships: Mitigating Adverse Selection and Moral Hazard](https://ieeexplore.ieee.org/document/11197624)** was accepted by the **International Conference on AI and the Digital Economy (CADE 2025)**.
+
 
 
 
