@@ -159,13 +159,21 @@ https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Poster%20
 
 ### 6. New Forms of Rent-Seeking: Algorithmic Manipulation
 
-### 🧩Paper 6 AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency
+### 🧩 Paper 6: *AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency*
 
-[![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
-[![arXiv](https://img.shields.io/badge/arXiv-2502.12956-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12956))
+[![Status](https://img.shields.io/badge/🔍%20Status-Working%20Paper-orange.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.12956-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12956)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
+https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Rent-Seeking.pdf
+)
 
+> **Abstract:**  
+> The rapid advancement of generative artificial intelligence (AI) has fundamentally reshaped the information environment, creating both efficiency gains and new strategic distortions. This paper investigates how generative AI alters economic rent-seeking behavior and its implications for market transparency and social welfare. We develop a dynamic economic model in which heterogeneous agents can engage in productive activity or AI-enabled rent-seeking, alongside a regulator seeking to mitigate welfare losses. Our analysis reveals a dual effect of generative AI: while it compresses traditional information rents by lowering search and disclosure costs, it simultaneously enables novel forms of rent-seeking, including large-scale information manipulation, strategic signal flooding, and algorithmic interference. These behaviors distort price signals, exacerbate effective information asymmetries, and lead to inefficient resource allocation. We characterize the conditions under which AI-enhanced manipulation dominates transparency gains and show that laissez-faire adoption can reduce aggregate welfare. To address these risks, we evaluate policy instruments such as targeted taxation, disclosure requirements, and algorithmic governance, highlighting their trade-offs and complementarities. The results provide a unified framework for understanding AI-enabled rent-seeking and offer policy guidance for preserving market efficiency in AI-mediated economies.
 
-> **Abstract:** The rapid advancement of generative artificial intelligence (AI) has transformed the information environment, creating both opportunities and challenges. This paper explores how generative AI influences economic rent-seeking behavior and its broader impact on social welfare. We develop a dynamic economic model involving multiple agents who may engage in rent-seeking activities and a regulator aiming to mitigate social welfare losses. Our analysis reveals a dual effect of generative AI: while it reduces traditional information rents by increasing transparency, it also introduces new forms of rent-seeking, such as information manipulation and algorithmic interference. These behaviors can lead to decreased social welfare by exacerbating information asymmetries and misallocating resources. To address these challenges, we propose policy interventions, including taxation and regulatory measures. This study provides a new perspective on the economic implications of generative AI, offering valuable insights for policymakers and laying a foundation for future research on regulating AI-driven economic behaviors.
+📌 **Conference / Working Poster:**  
+- 🖼️ *AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency*  
+  👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Rent-Seeking.pdf)  
+  👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/Rent-Seeking.pdf)
 
 
 ### 7. Rebuilding Contracts: Using AI Against Asymmetry
