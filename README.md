@@ -20,7 +20,7 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 * ✅ **2025 年 6 月** – 我们的论文 [**SeqGrowGraph**](https://arxiv.org/pdf/2507.04822v1) 被 ICCV 2025 接收。
 * ✅ **2025 年 5 月** – 我们发布了 [**FSDrive**](https://miv-xjtu.github.io/FSDrive.github.io/) 的完整项目。
 * ✅ **2025 年 4 月** – 我们的论文 [**G3PT**](https://arxiv.org/abs/2409.06322) 被 IJCAI 2025 接收。
-* 📢 **2025 年 4 月** – 我们发布了 [**FantasyTalking**](https://fantasy-amap.github.io/fantasy-talking/)、[**FantasyID**](https://fantasy-amap.github.io/fantasy-id/) 的推理代码和模型权重。
+* 📢 **2025 年 4 月** – 我们发布了 [**How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard**](https://ieeexplore.ieee.org/document/11197624)
 
 
 ## 📚 Part I — The Nature of Intelligence & Macroeconomic Dynamics  
