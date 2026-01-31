@@ -228,7 +228,8 @@ Together, these seven papers form a **coherent economic theory of generative AI*
 
 
 ## 📬 Contact
-* **Email**: [215010026@link.cuhk.edu.cn](215010026@link.cuhk.edu.cn),[yc57317@connect.um.edu.mo](mailto:yc57317@connect.um.edu.mo)
+* **Email**: [215010026@link.cuhk.edu.cn](215010026@link.cuhk.edu.cn),
+* [yc57317@connect.um.edu.mo](mailto:yc57317@connect.um.edu.mo)
 
 
 
