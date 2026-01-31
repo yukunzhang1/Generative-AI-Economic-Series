@@ -12,15 +12,17 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 
 
 
-# 🔈 The latest News
+# 🔈 Latest News
 
-* ✅ **2025 年 11月** – 我们共有 **5 篇论文** 入选 AAAI 2026，包括 1 篇 Oral，涵盖自动驾驶、以及来自视频生成与数字人：[**UniMapGen**](https://arxiv.org/abs/2509.22262) (*Oral*), [**PriorDrive**](), [**Persistent Autoregressive Mapping**](https://arxiv.org/pdf/2509.22756), [**FantasyTalking2**](https://fantasy-amap.github.io/fantasy-talking2/), [**FantasyHSI**](https://fantasy-amap.github.io/fantasy-hsi/)
-* ✅ **2025 年 9 月** – 我们的论文 [InformationPollution](https://arxiv.org/abs/2509.13729)) winning  [the Best Research Paper Award](https://miv-xjtu.github.io/FSDrive.github.io/)。
-* ✅ **2025 年 7 月** – 我们的论文 [**FantasyTalking**](https://arxiv.org/pdf/2504.04842) 被 ACM MM 2025 接收。
-* ✅ **2025 年 6 月** – 我们的论文 [**SeqGrowGraph**](https://arxiv.org/pdf/2507.04822v1) 被 ICCV 2025 接收。
-* ✅ **2025 年 5 月** – 我们发布了 [**FSDrive**](https://miv-xjtu.github.io/FSDrive.github.io/) 的完整项目。
-* ✅ **2025 年 4 月** – 我们的论文 [**G3PT**](https://arxiv.org/abs/2409.06322) 被 IJCAI 2025 接收。
-* 📢 **2025 年 4 月** – [**How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard**](https://ieeexplore.ieee.org/document/11197624) 被会议International Conference on AI and the Digital Economy (CADE 2025) 接受
+- ✅ **November 2025** – Our paper **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** won the **Best Research Paper Award** at the **NUS Academic Conference on Technology for Good: Driving Social Impact**.  
+  📄 Proceedings: [Tencent–CGS Academic Conference 2025, Volume I](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
+
+- ✅ **October 2025** – Our paper **[Beyond Private or Public: LLMs as Quasi-Public Goods](https://arxiv.org/abs/2509.13265)** was accepted by the **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
+
+- ✅ **October 2025** – Our paper **[The Economics of AI Information Pollution](https://arxiv.org/abs/2509.13729)** was accepted by the **[UNU Macau AI Conference 2025](https://unu.edu/macau/news/ai-humanity-unu-macau-ai-conference-2025-concludes-galaxy-international-convention)**.
+
+- 📢 **April 2025** – **[How Generative AI Reshapes Principal–Agent Relationships: Mitigating Adverse Selection and Moral Hazard](https://ieeexplore.ieee.org/document/11197624)** was accepted by the **International Conference on AI and the Digital Economy (CADE 2025)**.
+
 
 
 ## 📚 Part I — The Nature of Intelligence & Macroeconomic Dynamics  
