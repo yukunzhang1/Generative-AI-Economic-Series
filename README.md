@@ -122,13 +122,23 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 ### 7. Rebuilding Contracts: Using AI Against Asymmetry
 
-### 🧩Paper 7: Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard
+### 🧩 Paper 7: Generative AI and Information Asymmetry  
+**Impacts on Adverse Selection and Moral Hazard**
 
-[![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
+[![Status](https://img.shields.io/badge/🔍%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.12969-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12969)
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+[![Code](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
+https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf
+)
 
-> **Abstract:** Information asymmetry often leads to adverse selection and moral hazard in economic markets, causing inefficiencies and welfare losses. Traditional methods to address these issues, such as signaling and screening, are frequently insufficient. This research investigates how Generative Artificial Intelligence (AI) can create detailed informational signals that help principals better understand agents' types and monitor their actions. By incorporating these AI-generated signals into a principal-agent model, the study aims to reduce inefficiencies and improve contract designs. Through theoretical analysis and simulations, we demonstrate that Generative AI can effectively mitigate adverse selection and moral hazard, resulting in more efficient market outcomes and increased social welfare. Additionally, the findings offer practical insights for policymakers and industry stakeholders on the responsible implementation of Generative AI solutions to enhance market performance.
+> **Abstract:**  
+> Information asymmetry often leads to adverse selection and moral hazard in economic markets, resulting in inefficiencies and welfare losses. Traditional mechanisms such as signaling and screening are frequently insufficient in complex, high-dimensional environments. This paper investigates how **Generative AI** can produce rich, high-precision informational signals that enable principals to better infer agents’ hidden types and monitor effort. Embedding AI-generated signals into a dynamic principal–agent framework, we show both theoretically and through simulations that Generative AI can significantly mitigate adverse selection and moral hazard, leading to more efficient contracts and higher social welfare. The results further provide policy and governance insights into how AI can be responsibly deployed to reduce information frictions rather than exacerbate them.
+
+📌 **Conference Poster:**  
+- 🖼️ *How Generative AI Reshapes Principal–Agent Relationships: Mitigating Adverse Selection and Moral Hazard*  
+  👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf)  
+  👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf)
 
 
 ## 🔭 Vision of the Series
