@@ -105,13 +105,22 @@ https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/Poster_Ge
 
 ### 4. Platform Economics: The Trilemma of Two-Sided Markets
 
-### 🧩 Paper 4: The Impact of Generative AI on Content Platforms: A Two-Sided Market with Multi-Dimensional Quality Heterogeneity
+### 🧩 Paper 4: *The Impact of Generative AI on Content Platforms: A Two-Sided Market with Multi-Dimensional Quality Heterogeneity*
 
-[![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
-[![arXiv](https://img.shields.io/badge/arXiv-2410.13101-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.13101))
+[![Status](https://img.shields.io/badge/🔍%20Status-Working%20Paper-orange.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2410.13101-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.13101)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
+https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf
+)
 
+> **Abstract:**  
+> This paper presents a unified computational framework to examine how Generative AI (GenAI) reshapes welfare, inequality, and diversity in content platform economies. By integrating welfare economics with agent-based simulations, we model the co-evolutionary dynamics among AI generators, human creators, and consumers within a two-sided market characterized by multi-dimensional quality heterogeneity. Unlike static models, our framework endogenizes AI learning as a function of human data synthesis and models human adaptation as a strategic reallocation of skills toward creative niches. The results reveal that while GenAI significantly enhances consumer surplus through technical quality gains and price depression, it triggers a skill-biased displacement of human incumbents and intensifies market concentration. Through the evaluation of six governance regimes, we identify a fundamental **Policy Trilemma**, where platforms must navigate non-trivial trade-offs between allocative efficiency, distributional equity, and ecosystem sustainability. Our findings highlight that algorithmic diversity and pro-creative commission structures function as essential economic mechanisms for sustaining long-tail participation and inclusive social welfare in the generative AI era.
 
-> Abstract:This paper presents a unified computational framework to examine how generative AI (GenAI) reshapes welfare, inequality, and diversity in content platform economies. By integrating welfare economics with agent-based simulations, we model the co-evolutionary dynamics among AI generators, human creators, and consumers within a two-sided market characterized by multi-dimensional quality heterogeneity. Unlike static models, our framework endogenizes AI learning as a function of human data synthesis and models human adaptation as a strategic reallocation of skills toward creative niches. The results reveal that while GenAI significantly enhances consumer surplus through technical quality gains and price depression, it triggers a skill-biased displacement of human incumbents and intensifies market concentration. Through the evaluation of six governance regimes, we identify a fundamental ``Policy Trilemma'' where platforms must navigate non-trivial trade-offs between allocative efficiency, distributional equity, and ecosystem sustainability. Our findings highlight that algorithmic diversity and pro-creative commission structures function as essential economic mechanisms for sustaining long-tail participation and inclusive social welfare in the generative AI era.
+📌 **Conference / Working Poster:**  
+- 🖼️ *The Impact of Generative AI on Content Platforms*  
+  👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf)  
+  👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf)
+
 
 
 
