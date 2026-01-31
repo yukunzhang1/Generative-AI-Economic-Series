@@ -8,7 +8,7 @@
 
 ## 👤 Author
 
-**Yukun Zhang**,[The Chinese University of Hong Kong](https://www.cuhk.edu.cn/en)&nbsp; 
+**Yukun Zhang**,[The Chinese University of Hong Kong](https://www.cuhk.edu.hk/chinese/)&nbsp; 
 **Tianyang Zhang**, &nbsp;[University of Macau](https://www.um.edu.mo/)
 
 
