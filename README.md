@@ -33,16 +33,25 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 
 ---
 
-### 1. AI as a New Asset: The Engine of Growth
-### 🌐 Paper 1: The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
+### 1. AI as a New Asset: The Engine of Growth  
 
-[![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
-[![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339))
+### 🌐 Paper 1: *The Economics of Digital Intelligence Capital*  
+**Endogenous Depreciation and the Structural Jevons Paradox**
 
+[![Status](https://img.shields.io/badge/✅%20Status-Accepted%20%26%20Presented-success.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.12339-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
+https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/paper1_poster.pdf
+)
 
-[![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
+> **Abstract:**  
+> This paper develops a micro-founded economic theory of the AI industry by modeling large language models as a distinct asset class—**Digital Intelligence Capital**—characterized by data–compute complementarities, increasing returns to scale, and relative (rather than absolute) valuation. We show that these features fundamentally reshape industry dynamics along three dimensions. First, because downstream demand depends on relative capability, innovation by one firm endogenously depreciates the economic value of rivals’ existing capital, generating a persistent innovation pressure we term the **Red Queen Effect**. Second, falling inference prices induce downstream firms to adopt more compute-intensive agent architectures, rendering aggregate demand for compute super-elastic and producing a **structural Jevons paradox**. Third, learning from user feedback creates a data flywheel that can destabilize symmetric competition: when data accumulation outpaces data decay, the market bifurcates endogenously toward a **winner-takes-all equilibrium**. We further characterize conditions under which expanding upstream capabilities erode downstream application value (the **Wrapper Trap**). A calibrated agent-based model confirms these mechanisms and their quantitative implications. Together, the results provide a unified framework linking upstream intelligence production with downstream agentic demand, offering new insights into competition, scalability, and regulation in the AI economy.
 
-> Abstract: This paper develops a micro-founded economic theory of the AI industry by modeling large language models as a distinct asset class-Digital Intelligence Capital-characterized by data-compute complementarities, increasing returns to scale, and relative (rather than absolute) valuation. We show that these features fundamentally reshape industry dynamics along three dimensions. First, because downstream demand depends on relative capability, innovation by one firm endogenously depreciates the economic value of rivals' existing capital, generating a persistent innovation pressure we term the Red Queen Effect. Second, falling inference prices induce downstream firms to adopt more compute-intensive agent architectures, rendering aggregate demand for compute super-elastic and producing a structural Jevons paradox. Third, learning from user feedback creates a data flywheel that can destabilize symmetric competition: when data accumulation outpaces data decay, the market bifurcates endogenously toward a winner-takes-all equilibrium. We further characterize conditions under which expanding upstream capabilities erode downstream application value (the Wrapper Trap). A calibrated agent-based model confirms these mechanisms and their quantitative implications. Together, the results provide a unified framework linking intelligence production upstream with agentic demand downstream, offering new insights into competition, scalability, and regulation in the AI economy.
+📌 **Conference Poster:**  
+- 🖼️ *The Economics of Digital Intelligence Capital*  
+  👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/paper1_poster.pdf)  
+  👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/paper1_poster.pdf)
+
 
 
 
