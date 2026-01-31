@@ -15,12 +15,12 @@ Rather than treating AI as a mere productivity tool, this series reconceptualize
 # 🔈 The latest News
 
 * ✅ **2025 年 11月** – 我们共有 **5 篇论文** 入选 AAAI 2026，包括 1 篇 Oral，涵盖自动驾驶、以及来自视频生成与数字人：[**UniMapGen**](https://arxiv.org/abs/2509.22262) (*Oral*), [**PriorDrive**](), [**Persistent Autoregressive Mapping**](https://arxiv.org/pdf/2509.22756), [**FantasyTalking2**](https://fantasy-amap.github.io/fantasy-talking2/), [**FantasyHSI**](https://fantasy-amap.github.io/fantasy-hsi/)
-* ✅ **2025 年 9 月** – 我们的论文 [**InformationPollution**](https://miv-xjtu.github.io/FSDrive.github.io/) 被 NeurIPS 2025 接收。
+* ✅ **2025 年 9 月** – 我们的论文 [InformationPollution](https://arxiv.org/abs/2509.13729)) winning  [the Best Research Paper Award](https://miv-xjtu.github.io/FSDrive.github.io/)。
 * ✅ **2025 年 7 月** – 我们的论文 [**FantasyTalking**](https://arxiv.org/pdf/2504.04842) 被 ACM MM 2025 接收。
 * ✅ **2025 年 6 月** – 我们的论文 [**SeqGrowGraph**](https://arxiv.org/pdf/2507.04822v1) 被 ICCV 2025 接收。
 * ✅ **2025 年 5 月** – 我们发布了 [**FSDrive**](https://miv-xjtu.github.io/FSDrive.github.io/) 的完整项目。
 * ✅ **2025 年 4 月** – 我们的论文 [**G3PT**](https://arxiv.org/abs/2409.06322) 被 IJCAI 2025 接收。
-* 📢 **2025 年 4 月** – 我们发布了 [**How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard**](https://ieeexplore.ieee.org/document/11197624)
+* 📢 **2025 年 4 月** – [**How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard**](https://ieeexplore.ieee.org/document/11197624) 被会议International Conference on AI and the Digital Economy (CADE 2025) 接受
 
 
 ## 📚 Part I — The Nature of Intelligence & Macroeconomic Dynamics  
