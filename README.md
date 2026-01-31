@@ -32,7 +32,7 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 ---
 
 ### 1. AI as a New Asset: The Engine of Growth
-### 🌐 Paper: The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
+### 🌐 Paper 1: The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox
 
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339))
@@ -45,7 +45,7 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 
 
 ### 2. AI as Infrastructure: Commons or Walled Gardens?
-### 🌐 Paper: *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
+### 🌐 Paper 2: *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13265)
 [![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
@@ -64,7 +64,7 @@ When the marginal cost of content creation approaches zero, how do labor markets
 
 ### 3. Supply-Side Shock: The Hollowing Out of the Middle Class
 
-### 🧩 Paper: Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis
+### 🧩 Paper 3 : Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2601.12488-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12488)
@@ -75,7 +75,7 @@ When the marginal cost of content creation approaches zero, how do labor markets
 
 ### 4. Platform Economics: The Trilemma of Two-Sided Markets
 
-### 🧩 Paper: The Impact of Generative AI on Content Platforms: A Two-Sided Market with Multi-Dimensional Quality Heterogeneity
+### 🧩 Paper 4: The Impact of Generative AI on Content Platforms: A Two-Sided Market with Multi-Dimensional Quality Heterogeneity
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2410.13101-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.13101))
@@ -92,7 +92,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 ### 5. The Lemons Market for Information: Pollution and Trust Collapse
 
-### ⚖️Paper: The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design
+### ⚖️Paper 5 : The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design
 
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13729-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13729)
@@ -107,7 +107,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 ### 6. New Forms of Rent-Seeking: Algorithmic Manipulation
 
-### 🧩 AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency
+### 🧩Paper 6 AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.12956-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12956))
@@ -118,7 +118,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 ### 7. Rebuilding Contracts: Using AI Against Asymmetry
 
-### 🧩 Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard
+### 🧩Paper 7: Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.12969-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12969)
