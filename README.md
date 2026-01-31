@@ -56,14 +56,24 @@ https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/paper1_po
 
 
 ### 2. AI as Infrastructure: Commons or Walled Gardens?
+
 ### 🌐 Paper 2: *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
-[![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
+
+[![Status](https://img.shields.io/badge/✅%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13265)
+[![UNU-Macau](https://img.shields.io/badge/📢%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
+https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/The%20Beyond%20Private%20or%20Public.pdf
+)
 
+> **Abstract:**  
+> This paper conceptualizes Large Language Models (LLMs) as a form of **quasi-public goods** embedded within digital infrastructure, and analyzes their economic properties through a unified theoretical framework. We formally characterize the non-rivalry, partial excludability, and positive externalities of LLMs, and study how these features differentiate them from conventional private or public capital. Through a comparative analysis of **open-source** and **closed-source** development regimes, we identify systematic differences in innovation incentives, access equity, and resource allocation efficiency. Our empirical analysis further evaluates spillover effects and network externalities across domains such as knowledge diffusion, innovation acceleration, and industrial transformation. Based on these results, we propose policy mechanisms to balance innovation incentives with equitable access, including public–private partnerships, compute-access governance, and infrastructure-oriented regulatory design. Together, the paper reframes foundation models as critical digital infrastructure and provides policy guidance for maximizing their social welfare impact.
 
-[![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
-
-> Abstract:This paper conceptualizes Large Language Models (LLMs) as a form of mixed public goods within digital infrastructure, analyzing their economic properties through a comprehensive theoretical framework. We develop mathematical models to quantify the non-rivalry characteristics, partial excludability, and positive externalities of LLMs. Through comparative analysis of open-source and closed-source development paths, we identify systematic differences in resource allocation efficiency, innovation trajectories, and access equity. Our empirical research evaluates the spillover effects and network externalities of LLMs across different domains, including knowledge diffusion, innovation acceleration, and industry transformation. Based on these findings, we propose policy recommendations for balancing innovation incentives with equitable access, including public-private partnership mechanisms, computational resource democratization, and governance structures that optimize social welfare. This interdisciplinary approach contributes to understanding the economic nature of foundation AI models and provides policy guidance for their development as critical digital infrastructure
+📌 **Conference Poster & Presentation:**  
+- 🖼️ *Beyond Private or Public: Large Language Models as Quasi-Public Goods*  
+  👉 [View Poster (PDF)](https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/The%20Beyond%20Private%20or%20Public.pdf)  
+  👉 [Download Poster (Direct Link)](https://raw.githubusercontent.com/yukunzhang1/Generative-AI-Economic-Series/main/The%20Beyond%20Private%20or%20Public.pdf)  
+- 📢 Presented at **UNU Macau AI Conference 2025**
 
 
 ## 🏭 Part II — Market Fragmentation and Reconstruction  
