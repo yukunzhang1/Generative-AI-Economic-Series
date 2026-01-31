@@ -38,7 +38,7 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12339))
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+
 
 [![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
 
@@ -50,7 +50,7 @@ Is AI a new form of capital, or a new kind of public infrastructure? This part e
 ### 🌐 Paper 2: *Beyond Private or Public: Large Language Models as Quasi-Public Goods*
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13265-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13265)
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+
 
 [![UNU-Macau](https://img.shields.io/badge/📢%20%20Presentation-UNU%20Macau%20AI%20Conf%202025-blue.svg)](https://unu.edu/macau/aiconf2025)
 
@@ -70,7 +70,7 @@ When the marginal cost of content creation approaches zero, how do labor markets
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2601.12488-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.12488)
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+
 
 > **Abstract:**The diffusion of Generative AI (GenAI) constitutes a supply shock of a fundamentally different nature: while marginal production costs approach zero, content generation creates congestion externalities through information pollution. We develop a three-layer general equilibrium framework to study how this non-convex technology reshapes market structure, transition dynamics, and social welfare. In a static vertical differentiation model, we show that the GenAI cost shock induces a kinked production frontier that bifurcates the market into exit, AI, and human segments, generating a ``middle-class hollow'' in the quality distribution. To analyze adjustment paths, we embed this structure in a mean-field evolutionary system and a calibrated agent-based model with bounded rationality. The transition to the AI-integrated equilibrium is non-monotonic: rather than smooth diffusion, the economy experiences a temporary ecological collapse driven by search frictions and delayed skill adaptation, followed by selective recovery. Survival depends on asymmetric skill reconfiguration, whereby humans retreat from technical execution toward semantic creativity. Finally, we show that the welfare impact of AI adoption is highly sensitive to pollution intensity: low congestion yields monotonic welfare gains, whereas high pollution produces an inverted-U relationship in which further AI expansion reduces total welfare. These results imply that laissez-faire adoption can be inefficient and that optimal governance must shift from input regulation toward output-side congestion management.
 
@@ -81,7 +81,7 @@ When the marginal cost of content creation approaches zero, how do labor markets
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2410.13101-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.13101))
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+
 
 > Abstract:This paper presents a unified computational framework to examine how generative AI (GenAI) reshapes welfare, inequality, and diversity in content platform economies. By integrating welfare economics with agent-based simulations, we model the co-evolutionary dynamics among AI generators, human creators, and consumers within a two-sided market characterized by multi-dimensional quality heterogeneity. Unlike static models, our framework endogenizes AI learning as a function of human data synthesis and models human adaptation as a strategic reallocation of skills toward creative niches. The results reveal that while GenAI significantly enhances consumer surplus through technical quality gains and price depression, it triggers a skill-biased displacement of human incumbents and intensifies market concentration. Through the evaluation of six governance regimes, we identify a fundamental ``Policy Trilemma'' where platforms must navigate non-trivial trade-offs between allocative efficiency, distributional equity, and ecosystem sustainability. Our findings highlight that algorithmic diversity and pro-creative commission structures function as essential economic mechanisms for sustaining long-tail participation and inclusive social welfare in the generative AI era.
 
@@ -98,7 +98,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 [![Status](https://img.shields.io/badge/✅%20%20Status-Accepted%20%26%20Presented-success.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13729-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.13729)
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Info-Pollution-AI)
+
 
 
 
@@ -115,7 +115,7 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 [![Status](https://img.shields.io/badge/🔍%20%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.12956-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12956))
-[![GitHub](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
+
 
 > **Abstract:** The rapid advancement of generative artificial intelligence (AI) has transformed the information environment, creating both opportunities and challenges. This paper explores how generative AI influences economic rent-seeking behavior and its broader impact on social welfare. We develop a dynamic economic model involving multiple agents who may engage in rent-seeking activities and a regulator aiming to mitigate social welfare losses. Our analysis reveals a dual effect of generative AI: while it reduces traditional information rents by increasing transparency, it also introduces new forms of rent-seeking, such as information manipulation and algorithmic interference. These behaviors can lead to decreased social welfare by exacerbating information asymmetries and misallocating resources. To address these challenges, we propose policy interventions, including taxation and regulatory measures. This study provides a new perspective on the economic implications of generative AI, offering valuable insights for policymakers and laying a foundation for future research on regulating AI-driven economic behaviors.
 
@@ -127,7 +127,6 @@ In an age of information abundance, how do we rebuild trust and prevent manipula
 
 [![Status](https://img.shields.io/badge/🔍%20Status-Working%20Paper-orange.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.12969-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.12969)
-[![Code](https://img.shields.io/badge/Code-Stata%20%26%20R-181717.svg?logo=GitHub)](https://github.com/ty998703/Artificial-Intelligence-Economics-Series)
 [![Poster](https://img.shields.io/badge/Poster-PDF-blue.svg)](
 https://github.com/yukunzhang1/Generative-AI-Economic-Series/blob/main/How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf
 )
