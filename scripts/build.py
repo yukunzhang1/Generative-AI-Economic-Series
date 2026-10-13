@@ -12,11 +12,6 @@ HOME = 'https://yukunzhang1.github.io/'
 AGENT = HOME + 'research/ai-agent-economics/'
 UPDATED = date.fromisoformat(DATA['updated'])
 UPDATED_LABEL = {'en': f'{UPDATED.day} {UPDATED:%B %Y}', 'zh': f'{UPDATED.year}年{UPDATED.month}月{UPDATED.day}日'}
-KINDS = {
-    'award': {'en': 'Award', 'zh': '奖项'},
-    'presentation': {'en': 'Conference activity', 'zh': '会议活动'},
-    'publication': {'en': 'Publication', 'zh': '出版'},
-}
 
 
 def write(path, text):
@@ -67,9 +62,30 @@ def records_md(p, lang, detailed=False):
     return '\n'.join(lines)
 
 
-def all_records():
-    return sorted([(p, r) for p in DATA['papers'] for r in p['recognition']],
-                  key=lambda item: item[1]['date'], reverse=True)
+def recognition_highlights():
+    papers = {p['id']: p for p in DATA['papers']}
+    award = next(r for r in papers['2509.13729']['recognition'] if r['kind'] == 'award')
+    conference = papers['2509.13265']['recognition'][0]
+    publication = papers['2502.12969']['recognition'][0]
+    return [
+        ({'en': 'Best Paper Award · 2025', 'zh': '最佳论文奖 · 2025'},
+         {'en': 'Information Pollution — Tencent–CGS “Technology for Good” conference, NUS Business School.',
+          'zh': '信息污染论文获新加坡国立大学商学院腾讯–CGS“Technology for Good”会议最佳论文奖。'}, award),
+        ({'en': 'UNU Macau AI Conference · 2025', 'zh': '联合国大学澳门 AI 会议 · 2025'},
+         {'en': 'Conference programme includes the quasi-public goods paper and a related information-pollution presentation.',
+          'zh': '会议议程收录准公共品论文及信息污染相关研究报告。'}, conference),
+        ({'en': 'CADE · 2025', 'zh': 'CADE · 2025'},
+         {'en': 'Information Asymmetry — published in IET Conference Proceedings.',
+          'zh': '信息不对称论文发表于 IET 会议论文集。'}, publication),
+    ]
+
+
+def recognition_md(lang):
+    text = '<a id="recognition"></a>\n\n## ' + ('Awards & academic activities' if lang == 'en' else '奖项与学术活动') + '\n\n'
+    for title, summary, record in recognition_highlights():
+        sources = ' · '.join(f'[{label}]({url})' for label, url in record_sources(record, lang))
+        text += f'- **{title[lang]}** — {summary[lang]} {sources}\n'
+    return text + '\n'
 
 
 def readme(lang):
@@ -78,6 +94,7 @@ def readme(lang):
     text += ('[中文](README.zh-CN.md)' if en else '[English](README.md)') + f' · [Academic homepage]({HOME})\n\n'
     text += DATA['description'][lang] + '\n\n'
     text += ('[Research papers](#papers) · [Awards & academic activities](#recognition) · [Contact](#contact)' if en else '[系列论文](#papers) · [奖项与学术活动](#recognition) · [联系](#contact)') + '\n\n'
+    text += recognition_md(lang)
     text += '<a id="papers"></a>\n\n## ' + ('Research papers' if en else '系列论文') + '\n\n'
     text += ' · '.join(f'[{g[lang]}](#{g["id"]})' for g in DATA['groups']) + '\n\n'
     for g in DATA['groups']:
@@ -92,12 +109,6 @@ def readme(lang):
             text += md_resources(p, lang) + '\n\n'
             if p.get('published_title'):
                 text += ('Published under the title: ' if en else '出版版本题名：') + '*' + p['published_title'] + '*.\n\n'
-    text += '<a id="recognition"></a>\n\n## ' + ('Awards & academic activities' if en else '奖项与学术活动') + '\n\n'
-    for p, r in all_records():
-        text += f'### {r["date_label"][lang]} · {KINDS[r["kind"]][lang]}\n\n'
-        text += '**' + r[lang] + '**\n\n' + r['detail'][lang] + '\n\n'
-        text += ('Related paper' if en else '对应论文') + f': [{p["title"]}](#{p["slug"]})\n\n'
-        text += ' · '.join(f'[{label}]({url})' for label, url in record_sources(r, lang)) + '\n\n'
     text += '<a id="contact"></a>\n\n## ' + ('Contact' if en else '联系') + '\n\n'
     text += 'Yukun Zhang: [215010026@link.cuhk.edu.cn](mailto:215010026@link.cuhk.edu.cn)\n\nTianyang Zhang: [yc57317@connect.um.edu.mo](mailto:yc57317@connect.um.edu.mo)\n\n'
     text += f'[Academic homepage]({HOME}) · [AI Agent Economics]({AGENT})\n'
@@ -131,18 +142,10 @@ def paper_html(p):
 
 def recognition_html():
     rows = []
-    for p, r in all_records():
-        sources = ''.join(link(url, bilingual(en, zh)) for (en, url), (zh, _) in zip(record_sources(r, 'en'), record_sources(r, 'zh')))
-        date_label = bilingual(r['date_label'])
-        date_html = f'<time datetime="{r["date"]}">{date_label}</time>' if len(r['date']) == 10 else f'<span>{date_label}</span>'
-        rows.append(f'''<li class="activity activity-{r['kind']}">
-  <div class="activity-meta">{date_html}<span class="activity-kind">{bilingual(KINDS[r['kind']])}</span></div>
-  <h3>{bilingual(r)}</h3>
-  <p>{bilingual(r['detail'])}</p>
-  <p class="related-paper">{bilingual('Related paper: ', '对应论文：')}{link('#' + p['slug'], E(p['title']))}</p>
-  <div class="record-links">{sources}</div>
-</li>''')
-    return '<section class="reading-column recognition" id="recognition" aria-labelledby="recognition-title"><h2 id="recognition-title">' + bilingual('Awards & academic activities', '奖项与学术活动') + '</h2><ol class="activities">' + '\n'.join(rows) + '</ol></section>'
+    for title, summary, record in recognition_highlights():
+        sources = ' · '.join(link(url, bilingual(en, zh)) for (en, url), (zh, _) in zip(record_sources(record, 'en'), record_sources(record, 'zh')))
+        rows.append('<li><strong>' + bilingual(title) + '</strong><span class="highlight-summary">' + bilingual(summary) + ' <span class="highlight-sources">' + sources + '</span></span></li>')
+    return '<section class="reading-column recognition" id="recognition" aria-labelledby="recognition-title"><h2 id="recognition-title">' + bilingual('Awards & academic activities', '奖项与学术活动') + '</h2><ul class="recognition-highlights">' + '\n'.join(rows) + '</ul></section>'
 
 
 def website():
@@ -184,13 +187,13 @@ def website():
   </dl></div>
   <main>
     <div class="introduction reading-column"><p>{bilingual(DATA['description'])}</p></div>
+    {recognition_html()}
     <section class="reading-column papers" id="papers" aria-labelledby="papers-title">
       <h2 id="papers-title">{bilingual('Research papers', '系列论文')}</h2>
       <p class="section-intro">{bilingual('The papers are arranged by research theme. Full abstracts appear below.', '论文按研究主题排列，以下直接展示每篇论文的完整摘要。')}</p>
       <nav class="themes" aria-label="Research themes">{themes}</nav>
       {''.join(sections)}
     </section>
-    {recognition_html()}
     <section class="reading-column contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">{bilingual('Discussion & contact', '交流与联系')}</h2>
       <p>{bilingual('For questions and research discussions, contact the authors.', '欢迎就论文内容与研究合作联系作者。')}</p>

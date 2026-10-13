@@ -10,6 +10,14 @@ This series examines the economics of generative artificial intelligence through
 
 [Research papers](#papers) · [Awards & academic activities](#recognition) · [Contact](#contact)
 
+<a id="recognition"></a>
+
+## Awards & academic activities
+
+- **Best Paper Award · 2025** — Information Pollution — Tencent–CGS “Technology for Good” conference, NUS Business School. [Award announcement](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [Conference proceedings](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
+- **UNU Macau AI Conference · 2025** — Conference programme includes the quasi-public goods paper and a related information-pollution presentation. [Conference programme](https://unu.edu/macau/event/ai-equitable-governance)
+- **CADE · 2025** — Information Asymmetry — published in IET Conference Proceedings. [Published version](https://doi.org/10.1049/icp.2025.2956)
+
 <a id="papers"></a>
 
 ## Research papers
@@ -106,50 +114,6 @@ Information asymmetry often leads to adverse selection and moral hazard in econo
 [Read paper PDF](https://arxiv.org/pdf/2502.12969) · [arXiv](https://arxiv.org/abs/2502.12969) · [Published version](https://doi.org/10.1049/icp.2025.2956)
 
 Published under the title: *How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard*.
-
-<a id="recognition"></a>
-
-## Awards & academic activities
-
-### 19 November 2025 · Award
-
-**Best Paper Award · Technology for Good: Driving Social Impact**
-
-Awarded to Yukun Zhang and Tianyang Zhang at the Tencent–CGS Academic Conference, NUS Business School. The paper also appears in Volume I of the conference proceedings, pp. 168–196 (December 2025).
-
-Related paper: [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](#information-pollution)
-
-[Award announcement](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [Conference proceedings](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
-
-### 24 October 2025 · Conference activity
-
-**UNU Macau AI Conference 2025 · AI + Equitable Governance**
-
-Yukun Zhang and Tianyang Zhang are listed in the conference programme with “Beyond Private or Public: Large Language Models as Quasi-Public Goods for Equitable AI Access”.
-
-Related paper: [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](#quasi-public-goods)
-
-[Conference programme](https://unu.edu/macau/event/ai-equitable-governance)
-
-### 24 October 2025 · Conference activity
-
-**UNU Macau AI Conference 2025 · related information-pollution presentation**
-
-The programme lists Yukun Zhang with “Bridging the Digital Divide: A Hybrid Economic–Technical Framework for Mitigating Information Pollution in AI-Driven Ecosystems”. This is a related conference presentation under a different title.
-
-Related paper: [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](#information-pollution)
-
-[Conference programme](https://unu.edu/macau/event/ai-equitable-governance)
-
-### 2025 · Publication
-
-**CADE 2025 · IET Conference Proceedings**
-
-Conference publication under the title “How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard”.
-
-Related paper: [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](#information-asymmetry)
-
-[Published version](https://doi.org/10.1049/icp.2025.2956)
 
 <a id="contact"></a>
 

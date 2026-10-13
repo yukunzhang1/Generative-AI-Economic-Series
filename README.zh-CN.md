@@ -10,6 +10,14 @@ Yukun Zhang · Tianyang Zhang
 
 [系列论文](#papers) · [奖项与学术活动](#recognition) · [联系](#contact)
 
+<a id="recognition"></a>
+
+## 奖项与学术活动
+
+- **最佳论文奖 · 2025** — 信息污染论文获新加坡国立大学商学院腾讯–CGS“Technology for Good”会议最佳论文奖。 [获奖公告](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [会议论文集](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
+- **联合国大学澳门 AI 会议 · 2025** — 会议议程收录准公共品论文及信息污染相关研究报告。 [会议议程](https://unu.edu/macau/event/ai-equitable-governance)
+- **CADE · 2025** — 信息不对称论文发表于 IET 会议论文集。 [出版版本](https://doi.org/10.1049/icp.2025.2956)
+
 <a id="papers"></a>
 
 ## 系列论文
@@ -106,50 +114,6 @@ Yukun Zhang · Tianyang Zhang
 [阅读论文 PDF](https://arxiv.org/pdf/2502.12969) · [arXiv](https://arxiv.org/abs/2502.12969) · [出版版本](https://doi.org/10.1049/icp.2025.2956)
 
 出版版本题名：*How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard*.
-
-<a id="recognition"></a>
-
-## 奖项与学术活动
-
-### 2025年11月19日 · 奖项
-
-**最佳论文奖 · Technology for Good: Driving Social Impact**
-
-Yukun Zhang 与 Tianyang Zhang 在新加坡国立大学商学院举办的腾讯–CGS 学术会议上获得最佳论文奖。论文同时收录于2025年12月出版的会议论文集第一卷，第168–196页。
-
-对应论文: [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](#information-pollution)
-
-[获奖公告](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [会议论文集](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
-
-### 2025年10月24日 · 会议活动
-
-**联合国大学澳门 AI 会议 2025 · AI + Equitable Governance**
-
-会议议程列有 Yukun Zhang 与 Tianyang Zhang，报告题名为“Beyond Private or Public: Large Language Models as Quasi-Public Goods for Equitable AI Access”。
-
-对应论文: [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](#quasi-public-goods)
-
-[会议议程](https://unu.edu/macau/event/ai-equitable-governance)
-
-### 2025年10月24日 · 会议活动
-
-**联合国大学澳门 AI 会议 2025 · 信息污染相关研究报告**
-
-会议议程列有 Yukun Zhang 的报告“Bridging the Digital Divide: A Hybrid Economic–Technical Framework for Mitigating Information Pollution in AI-Driven Ecosystems”。这是以不同题名列出的信息污染相关研究报告。
-
-对应论文: [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](#information-pollution)
-
-[会议议程](https://unu.edu/macau/event/ai-equitable-governance)
-
-### 2025年 · 出版
-
-**CADE 2025 · IET 会议论文集**
-
-以“How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard”为题出版。
-
-对应论文: [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](#information-asymmetry)
-
-[出版版本](https://doi.org/10.1049/icp.2025.2956)
 
 <a id="contact"></a>
 
