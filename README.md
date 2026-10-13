@@ -28,43 +28,8 @@ Examines foundation models as quasi-public infrastructure, connecting access rul
 
 [arXiv](https://arxiv.org/abs/2509.13265) · [Poster](The%20Beyond%20Private%20or%20Public.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/quasi-public-goods/)
 
-**3. [Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis](papers/non-convex-supply-shock.md)**  
-Studies market bifurcation and adjustment when low production costs coexist with congestion from generated content.
-
-[arXiv](https://arxiv.org/abs/2601.12488) · [Poster](Poster_Generative%20AI%20as%20a%20Non-Convex%20Supply%20Shock%20Market%20Bifurcation%20and%20Welfare%20Analysis.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/non-convex-supply-shock/)
-
-**4. [The Impact of Generative AI on Content Platforms: A Two-Sided Market Analysis with Multi-Dimensional Quality Heterogeneity](papers/content-platforms.md)**  
-Examines welfare, creator displacement, and diversity in a two-sided content market with heterogeneous quality.
-
-[arXiv](https://arxiv.org/abs/2410.13101) · [Poster](The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/content-platforms/)
-
-**5. [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](papers/information-pollution.md)**  
-Connects asymmetric production costs, platform incentives, and information externalities to welfare and governance.
-
-[arXiv](https://arxiv.org/abs/2509.13729) · [Poster](Poster%20AI%20Pollution%20Conference_Tech%20for%20Good_Driving%20Social%20Impact.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/information-pollution/)
-
-**6. [AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency](papers/ai-enabled-rent-seeking.md)**  
-Studies the tension between lower information rents and new opportunities for AI-enabled manipulation.
-
-[arXiv](https://arxiv.org/abs/2502.12956) · [Poster](Rent-Seeking.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/ai-enabled-rent-seeking/)
-
-**7. [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](papers/information-asymmetry.md)**  
-Explores how richer informational signals can change adverse selection, moral hazard, and contract design.
-
-[arXiv](https://arxiv.org/abs/2502.12969) · [Poster](How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/information-asymmetry/) · [Published version](https://doi.org/10.1049/icp.2025.2956)
-
 ### Markets & Platforms
 
-**1. [The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox](papers/digital-intelligence-capital.md)**  
-Models how relative capability, feedback accumulation, and downstream agent design shape depreciation, compute demand, and market concentration.
-
-[arXiv](https://arxiv.org/abs/2601.12339) · [Poster](paper1_poster.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/digital-intelligence-capital/)
-
-**2. [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](papers/quasi-public-goods.md)**  
-Examines foundation models as quasi-public infrastructure, connecting access rules and spillovers to innovation incentives and welfare.
-
-[arXiv](https://arxiv.org/abs/2509.13265) · [Poster](The%20Beyond%20Private%20or%20Public.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/quasi-public-goods/)
-
 **3. [Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis](papers/non-convex-supply-shock.md)**  
 Studies market bifurcation and adjustment when low production costs coexist with congestion from generated content.
 
@@ -74,43 +39,8 @@ Studies market bifurcation and adjustment when low production costs coexist with
 Examines welfare, creator displacement, and diversity in a two-sided content market with heterogeneous quality.
 
 [arXiv](https://arxiv.org/abs/2410.13101) · [Poster](The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/content-platforms/)
-
-**5. [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](papers/information-pollution.md)**  
-Connects asymmetric production costs, platform incentives, and information externalities to welfare and governance.
-
-[arXiv](https://arxiv.org/abs/2509.13729) · [Poster](Poster%20AI%20Pollution%20Conference_Tech%20for%20Good_Driving%20Social%20Impact.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/information-pollution/)
-
-**6. [AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency](papers/ai-enabled-rent-seeking.md)**  
-Studies the tension between lower information rents and new opportunities for AI-enabled manipulation.
-
-[arXiv](https://arxiv.org/abs/2502.12956) · [Poster](Rent-Seeking.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/ai-enabled-rent-seeking/)
-
-**7. [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](papers/information-asymmetry.md)**  
-Explores how richer informational signals can change adverse selection, moral hazard, and contract design.
-
-[arXiv](https://arxiv.org/abs/2502.12969) · [Poster](How%20Generative%20AI%20Reshapes%20Principal%20%20Agent%20Relationships%20Mitigating%20Adverse%20Selection%20and%20Moral%20Hazard.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/information-asymmetry/) · [Published version](https://doi.org/10.1049/icp.2025.2956)
 
 ### Information & Incentives
-
-**1. [The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox](papers/digital-intelligence-capital.md)**  
-Models how relative capability, feedback accumulation, and downstream agent design shape depreciation, compute demand, and market concentration.
-
-[arXiv](https://arxiv.org/abs/2601.12339) · [Poster](paper1_poster.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/digital-intelligence-capital/)
-
-**2. [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](papers/quasi-public-goods.md)**  
-Examines foundation models as quasi-public infrastructure, connecting access rules and spillovers to innovation incentives and welfare.
-
-[arXiv](https://arxiv.org/abs/2509.13265) · [Poster](The%20Beyond%20Private%20or%20Public.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/quasi-public-goods/)
-
-**3. [Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis](papers/non-convex-supply-shock.md)**  
-Studies market bifurcation and adjustment when low production costs coexist with congestion from generated content.
-
-[arXiv](https://arxiv.org/abs/2601.12488) · [Poster](Poster_Generative%20AI%20as%20a%20Non-Convex%20Supply%20Shock%20Market%20Bifurcation%20and%20Welfare%20Analysis.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/non-convex-supply-shock/)
-
-**4. [The Impact of Generative AI on Content Platforms: A Two-Sided Market Analysis with Multi-Dimensional Quality Heterogeneity](papers/content-platforms.md)**  
-Examines welfare, creator displacement, and diversity in a two-sided content market with heterogeneous quality.
-
-[arXiv](https://arxiv.org/abs/2410.13101) · [Poster](The%20Impact%20of%20Generative%20AI%20on%20Content%20Platforms.pdf) · [Overview](https://yukunzhang1.github.io/research/ai-economics/content-platforms/)
 
 **5. [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](papers/information-pollution.md)**  
 Connects asymmetric production costs, platform incentives, and information externalities to welfare and governance.

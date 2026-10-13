@@ -70,6 +70,8 @@ def overview():
     for g in D['groups']:
         body += '<section class="ge-group" id="' + g['id'] + '"><h2>' + bi(g) + '</h2>'
         for p in D['papers']:
+            if p['group'] != g['id']:
+                continue
             body += '<article class="ge-paper"><span class="ge-number">' + str(p['number']).zfill(2) + '</span><div><h3>'
             body += link('/research/ai-economics/' + p['slug'] + '/', ESC(p['title']), True) + '</h3>'
             body += '<p>' + bi(p['summary']) + '</p>' + recognition(p) + links(p) + '</div></article>'
@@ -95,7 +97,9 @@ def detail(p):
     if p.get('published_title'):
         body += '<p class="ge-publication-note">' + bi('The publication record uses the title: ', '出版版本使用以下题名：') + '<em>' + ESC(p['published_title']) + '</em>.</p>'
     body += '<section id="citation" class="ge-citation"><h2>' + bi('Cite this paper', '引用论文') + '</h2><p class="ge-muted">' + bi('BibTeX for the arXiv version. Use the publisher’s citation for the published version.', '以下为 arXiv 版本引用；引用出版版本时，请使用出版方提供的书目信息。') + '</p>'
-    body += '<pre><code>' + ESC(citation(p)) + '</code></pre><button class="ge-copy" type="button" hidden>' + bi('Copy BibTeX', '复制 BibTeX') + '</button><span class="ge-copy-status" aria-live="polite"></span></section>'
+    # Encode braces so Jekyll/Liquid preserves BibTeX title capitalization braces.
+    citation_html = ESC(citation(p)).replace('{', '&#123;').replace('}', '&#125;')
+    body += '<pre><code>' + citation_html + '</code></pre><button class="ge-copy" type="button" hidden>' + bi('Copy BibTeX', '复制 BibTeX') + '</button><span class="ge-copy-status" aria-live="polite"></span></section>'
     body += '<nav class="ge-pagination" aria-label="Other papers">'
     idx = p['number'] - 1
     if idx > 0:
@@ -119,6 +123,8 @@ def build_repo():
     for g in D['groups']:
         intro += '### ' + g['en'] + '\n\n'
         for p in D['papers']:
+            if p['group'] != g['id']:
+                continue
             intro += f'**{p["number"]}. [{p["title"]}](papers/{p["slug"]}.md)**  \n{p["summary"]["en"]}\n\n'
             intro += f'[arXiv](https://arxiv.org/abs/{p["id"]}) · [Poster]({quote(p["poster"])}) · [Overview]({BASE}{p["slug"]}/)'
             if p.get('doi'):
@@ -135,6 +141,8 @@ def build_repo():
     for g in D['groups']:
         zh += '## ' + g['zh'] + '\n\n' + g['question']['zh'] + '\n\n'
         for p in D['papers']:
+            if p['group'] != g['id']:
+                continue
             zh += f'**{p["number"]}. [{p["title"]}](papers/{p["slug"]}.md)**\n\n{p["summary"]["zh"]}\n\n[论文](https://arxiv.org/abs/{p["id"]}) · [海报]({quote(p["poster"])}) · [中英文介绍]({BASE}{p["slug"]}/)\n\n'
     zh += '## 学术认可与会议展示\n\n'
     for p in D['papers']:
