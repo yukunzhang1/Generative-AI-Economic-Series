@@ -3,10 +3,12 @@
 from pathlib import Path
 import html
 import json
+import hashlib
 from datetime import date
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'data/papers.json').read_text())
+STYLE_VERSION = hashlib.sha256((ROOT / 'site-assets/ai-economics.css').read_bytes()).hexdigest()[:12]
 E = html.escape
 HOME = 'https://yukunzhang1.github.io/'
 AGENT = HOME + 'research/ai-agent-economics/'
@@ -166,7 +168,7 @@ def website():
   <meta property="og:title" content="Generative AI Economics">
   <meta property="og:description" content="Seven papers on capital, markets, and information, with full abstracts and academic activities.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="site-assets/ai-economics.css">
+  <link rel="stylesheet" href="site-assets/ai-economics.css?v={STYLE_VERSION}">
   <script src="site-assets/ai-economics.js" defer></script>
 </head>
 <body id="top">

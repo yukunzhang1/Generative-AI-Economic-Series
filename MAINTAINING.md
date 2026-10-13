@@ -18,4 +18,6 @@ The homepage and both READMEs place a compact, three-item summary immediately af
 
 The public page uses `site-assets/ai-economics.css` and `site-assets/ai-economics.js`. There is no package installation or framework build. GitHub Pages can publish the `main` branch's root directory; `.nojekyll` keeps the HTML and assets unchanged. Configure that publishing source in the repository's Pages settings if it has not yet been enabled. GitHub's README renderer does not apply the website stylesheet.
 
+The generator adds a content hash to the stylesheet URL so that published layout changes refresh browser caches automatically. Run the generator after editing CSS as well as paper data.
+
 Poster and citation-download links are intentionally absent from the website, READMEs, and reading pages. Original material files remain at their existing paths.
