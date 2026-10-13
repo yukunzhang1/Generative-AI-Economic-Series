@@ -1,0 +1,296 @@
+{
+  "title": "Generative AI Economics",
+  "subtitle": {
+    "en": "Capital, Markets, and Information",
+    "zh": "资本、市场与信息"
+  },
+  "description": {
+    "en": "Seven papers examine how generative AI changes the economics of intelligence production, reorganizes markets and platforms, and reshapes information and incentives. The series brings together complementary theoretical and computational perspectives on value creation, distribution, and governance.",
+    "zh": "七篇论文考察生成式 AI 如何改变智能生产的经济机制、重组市场与平台，并影响信息与激励。该系列结合相互补充的理论和计算研究，讨论价值创造、分配与治理。"
+  },
+  "groups": [
+    {
+      "id": "capital",
+      "en": "AI Capital & Infrastructure",
+      "zh": "AI 资本与基础设施",
+      "question": {
+        "en": "How do investment, access, and competition shape the value of AI?",
+        "zh": "投资、使用机会与竞争如何塑造 AI 的价值？"
+      }
+    },
+    {
+      "id": "markets",
+      "en": "Markets & Platforms",
+      "zh": "市场与平台",
+      "question": {
+        "en": "How do generation costs change market structure and participation?",
+        "zh": "生成成本如何改变市场结构和参与？"
+      }
+    },
+    {
+      "id": "information",
+      "en": "Information & Incentives",
+      "zh": "信息与激励",
+      "question": {
+        "en": "When does AI improve information, and when does it reward manipulation?",
+        "zh": "AI 何时改善信息，何时激励操纵？"
+      }
+    }
+  ],
+  "papers": [
+    {
+      "number": 1,
+      "id": "2601.12339",
+      "slug": "digital-intelligence-capital",
+      "group": "capital",
+      "title": "The Economics of Digital Intelligence Capital: Endogenous Depreciation and the Structural Jevons Paradox",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2026,
+      "first_posted": "2026-01-18",
+      "revised": "2026-01-18",
+      "abstract": "This paper develops a micro-founded economic theory of the AI industry by modeling large language models as a distinct asset class-Digital Intelligence Capital-characterized by data-compute complementarities, increasing returns to scale, and relative (rather than absolute) valuation. We show that these features fundamentally reshape industry dynamics along three dimensions. First, because downstream demand depends on relative capability, innovation by one firm endogenously depreciates the economic value of rivals' existing capital, generating a persistent innovation pressure we term the Red Queen Effect. Second, falling inference prices induce downstream firms to adopt more compute-intensive agent architectures, rendering aggregate demand for compute super-elastic and producing a structural Jevons paradox. Third, learning from user feedback creates a data flywheel that can destabilize symmetric competition: when data accumulation outpaces data decay, the market bifurcates endogenously toward a winner-takes-all equilibrium. We further characterize conditions under which expanding upstream capabilities erode downstream application value (the Wrapper Trap). A calibrated agent-based model confirms these mechanisms and their quantitative implications. Together, the results provide a unified framework linking intelligence production upstream with agentic demand downstream, offering new insights into competition, scalability, and regulation in the AI economy.",
+      "poster": "paper1_poster.pdf",
+      "question": {
+        "en": "How does competition change the economic value of intelligence capital?",
+        "zh": "竞争如何改变智能资本的经济价值？"
+      },
+      "summary": {
+        "en": "Models how relative capability, feedback accumulation, and downstream agent design shape depreciation, compute demand, and market concentration.",
+        "zh": "研究相对能力、反馈积累与下游智能体设计如何影响资本折旧、计算需求和市场集中度。"
+      },
+      "contribution": {
+        "en": "In the model, competitors’ advances can depreciate existing intelligence capital. Lower inference prices can induce more compute-intensive agent architectures, while feedback accumulation can reinforce concentration.",
+        "zh": "模型中，竞争者的能力进步可能使既有智能资本贬值。推理价格下降可能推动更耗算力的智能体架构，反馈积累则可能强化市场集中。"
+      },
+      "scope": {
+        "en": "The results depend on the specified demand, technology, and feedback mechanisms. The simulations illustrate those mechanisms; their magnitudes are not universal estimates of the AI industry.",
+        "zh": "结论依赖所设定的需求、技术和反馈机制。模拟用于刻画这些机制，其量级不能直接视为整个 AI 产业的普遍估计。"
+      },
+      "recognition": []
+    },
+    {
+      "number": 2,
+      "id": "2509.13265",
+      "slug": "quasi-public-goods",
+      "group": "capital",
+      "title": "Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2025,
+      "first_posted": "2025-09-16",
+      "revised": "2025-09-16",
+      "abstract": "This paper conceptualizes Large Language Models (LLMs) as a form of mixed public goods within digital infrastructure, analyzing their economic properties through a comprehensive theoretical framework. We develop mathematical models to quantify the non-rivalry characteristics, partial excludability, and positive externalities of LLMs. Through comparative analysis of open-source and closed-source development paths, we identify systematic differences in resource allocation efficiency, innovation trajectories, and access equity. Our empirical research evaluates the spillover effects and network externalities of LLMs across different domains, including knowledge diffusion, innovation acceleration, and industry transformation. Based on these findings, we propose policy recommendations for balancing innovation incentives with equitable access, including public-private partnership mechanisms, computational resource democratization, and governance structures that optimize social welfare. This interdisciplinary approach contributes to understanding the economic nature of foundation AI models and provides policy guidance for their development as critical digital infrastructure",
+      "poster": "The Beyond Private or Public.pdf",
+      "question": {
+        "en": "How should access to foundation models be organized?",
+        "zh": "基座模型的使用机会应如何组织？"
+      },
+      "summary": {
+        "en": "Examines foundation models as quasi-public infrastructure, connecting access rules and spillovers to innovation incentives and welfare.",
+        "zh": "将基座模型作为准公共基础设施，讨论使用规则与外部性如何影响创新激励和社会福利。"
+      },
+      "contribution": {
+        "en": "The paper analyzes non-rivalry, partial excludability, and positive externalities, and compares the implications of open and closed development regimes for access and resource allocation.",
+        "zh": "论文分析非竞争性、部分排他性与正外部性，并比较开放与封闭发展路径对使用机会和资源配置的影响。"
+      },
+      "scope": {
+        "en": "The classification and policy implications depend on the model and its access conditions. Shared model knowledge and scarce inference resources need to be distinguished when interpreting non-rivalry.",
+        "zh": "分类及政策含义依赖模型和使用条件。理解非竞争性时，需要区分可共享的模型知识与稀缺的推理资源。"
+      },
+      "recognition": [
+        {
+          "en": "UNU Macau AI Conference 2025 · conference programme",
+          "zh": "联合国大学澳门 AI 会议 2025 · 会议议程",
+          "url": "https://unu.edu/macau/event/ai-equitable-governance"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "2601.12488",
+      "slug": "non-convex-supply-shock",
+      "group": "markets",
+      "title": "Generative AI as a Non-Convex Supply Shock: Market Bifurcation and Welfare Analysis",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2026,
+      "first_posted": "2026-01-18",
+      "revised": "2026-01-18",
+      "abstract": "The diffusion of Generative AI (GenAI) constitutes a supply shock of a fundamentally different nature: while marginal production costs approach zero, content generation creates congestion externalities through information pollution. We develop a three-layer general equilibrium framework to study how this non-convex technology reshapes market structure, transition dynamics, and social welfare. In a static vertical differentiation model, we show that the GenAI cost shock induces a kinked production frontier that bifurcates the market into exit, AI, and human segments, generating a ``middle-class hollow'' in the quality distribution. To analyze adjustment paths, we embed this structure in a mean-field evolutionary system and a calibrated agent-based model with bounded rationality. The transition to the AI-integrated equilibrium is non-monotonic: rather than smooth diffusion, the economy experiences a temporary ecological collapse driven by search frictions and delayed skill adaptation, followed by selective recovery. Survival depends on asymmetric skill reconfiguration, whereby humans retreat from technical execution toward semantic creativity. Finally, we show that the welfare impact of AI adoption is highly sensitive to pollution intensity: low congestion yields monotonic welfare gains, whereas high pollution produces an inverted-U relationship in which further AI expansion reduces total welfare. These results imply that laissez-faire adoption can be inefficient and that optimal governance must shift from input regulation toward output-side congestion management.",
+      "poster": "Poster_Generative AI as a Non-Convex Supply Shock Market Bifurcation and Welfare Analysis.pdf",
+      "question": {
+        "en": "How does a fall in generation costs reorganize markets?",
+        "zh": "生成成本下降如何重组市场？"
+      },
+      "summary": {
+        "en": "Studies market bifurcation and adjustment when low production costs coexist with congestion from generated content.",
+        "zh": "研究低生产成本与生成内容拥堵并存时的市场分化和调整过程。"
+      },
+      "contribution": {
+        "en": "A vertical-differentiation model is combined with evolutionary dynamics and agent-based simulation. In these settings, transition can be uneven and welfare gains can reverse as congestion rises.",
+        "zh": "论文结合垂直差异化模型、演化动态与主体模拟。在这些设定中，转型过程可能不平稳，福利收益也可能随拥堵上升而逆转。"
+      },
+      "scope": {
+        "en": "Bifurcation and transition paths are properties of the specified model. They are not forecasts that every content market will follow the same trajectory.",
+        "zh": "市场分化与转型路径是特定模型中的结果，并不预测所有内容市场都会经历相同过程。"
+      },
+      "recognition": []
+    },
+    {
+      "number": 4,
+      "id": "2410.13101",
+      "slug": "content-platforms",
+      "group": "markets",
+      "title": "The Impact of Generative AI on Content Platforms: A Two-Sided Market Analysis with Multi-Dimensional Quality Heterogeneity",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2024,
+      "first_posted": "2024-10-17",
+      "revised": "2026-01-14",
+      "abstract": "This paper presents a unified computational framework to examine how generative AI (GenAI) reshapes welfare, inequality, and diversity in content platform economies. By integrating welfare economics with agent-based simulations, we model the co-evolutionary dynamics among AI generators, human creators, and consumers within a two-sided market characterized by multi-dimensional quality heterogeneity. Unlike static models, our framework endogenizes AI learning as a function of human data synthesis and models human adaptation as a strategic reallocation of skills toward creative niches. The results reveal that while GenAI significantly enhances consumer surplus through technical quality gains and price depression, it triggers a skill-biased displacement of human incumbents and intensifies market concentration. Through the evaluation of six governance regimes, we identify a fundamental ``Policy Trilemma'' where platforms must navigate non-trivial trade-offs between allocative efficiency, distributional equity, and ecosystem sustainability. Our findings highlight that algorithmic diversity and pro-creative commission structures function as essential economic mechanisms for sustaining long-tail participation and inclusive social welfare in the generative AI era.",
+      "poster": "The Impact of Generative AI on Content Platforms.pdf",
+      "question": {
+        "en": "Can platforms balance consumer gains with creator participation?",
+        "zh": "平台如何兼顾消费者收益和创作者参与？"
+      },
+      "summary": {
+        "en": "Examines welfare, creator displacement, and diversity in a two-sided content market with heterogeneous quality.",
+        "zh": "考察质量异质的双边内容市场中的福利、创作者替代和多样性。"
+      },
+      "contribution": {
+        "en": "Computational experiments compare six governance regimes. In the model, consumer gains can coexist with displacement and concentration, creating trade-offs among efficiency, equity, and ecosystem sustainability.",
+        "zh": "计算实验比较六种治理安排。在模型中，消费者收益可能与创作者替代及市场集中同时发生，使效率、公平和生态持续性之间出现权衡。"
+      },
+      "scope": {
+        "en": "Policy comparisons are conditional on the simulated platform, quality dimensions, and adaptation rules. The results should not be read as estimated causal effects on a particular platform.",
+        "zh": "政策比较以模拟平台、质量维度和适应规则为条件，不应被解读为某个真实平台上的因果效应估计。"
+      },
+      "recognition": []
+    },
+    {
+      "number": 5,
+      "id": "2509.13729",
+      "slug": "information-pollution",
+      "group": "information",
+      "title": "The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2025,
+      "first_posted": "2025-09-17",
+      "revised": "2026-01-04",
+      "abstract": "The advent of Large Language Models (LLMs) represents a fundamental shock to the economics of information production. By asymmetrically collapsing the marginal cost of generating low-quality, synthetic content while leaving high-quality production costly, AI systematically incentivizes information pollution. This paper develops a general equilibrium framework to analyze this challenge. We model the strategic interactions among a monopolistic platform, profit-maximizing producers, and utility-maximizing consumers in a three-stage game. The core of our model is a production technology with differential elasticities of substitution (\\sigma_L > 1 > \\sigma_H), which formalizes the insight that AI is a substitute for labor in low-quality production but a complement in high-quality creation. We prove the existence of a unique \"Polluted Information Equilibrium\" and demonstrate its inefficiency, which is driven by a threefold market failure: a production externality, a platform governance failure, and an information commons externality. Methodologically, we derive a theoretically-grounded Information Pollution Index (IPI) with endogenous welfare weights to measure ecosystem health. From a policy perspective, we show that a first-best outcome requires a portfolio of instruments targeting each failure. Finally, considering the challenges of deep uncertainty, we advocate for an adaptive governance framework where policy instruments are dynamically adjusted based on real-time IPI readings, offering a robust blueprint for regulating information markets in the age of AI.",
+      "poster": "Poster AI Pollution Conference_Tech for Good_Driving Social Impact.pdf",
+      "question": {
+        "en": "Why can cheaper generation produce an inefficient information environment?",
+        "zh": "更低的生成成本为何可能导致低效率的信息环境？"
+      },
+      "summary": {
+        "en": "Connects asymmetric production costs, platform incentives, and information externalities to welfare and governance.",
+        "zh": "将非对称生产成本、平台激励与信息外部性联系起来，研究福利和治理。"
+      },
+      "contribution": {
+        "en": "A platform–producer–consumer model characterizes a polluted equilibrium and distinct market failures. The paper proposes a welfare-weighted Information Pollution Index and a portfolio of policy instruments.",
+        "zh": "平台、生产者与消费者模型刻画污染均衡及不同市场失灵。论文提出以福利影响为权重的信息污染指数和多种政策工具的组合。"
+      },
+      "scope": {
+        "en": "Equilibrium and welfare claims are conditional on the model assumptions. The proposed index requires empirical operationalization; the paper is not a measurement of the share of AI-generated content online.",
+        "zh": "均衡和福利结论以模型假设为条件。所提指数仍需经验操作化，论文并非对互联网 AI 生成内容占比的测量。"
+      },
+      "recognition": [
+        {
+          "en": "Best Paper Award · Technology for Good 2025 (NUS CGS–Tencent)",
+          "zh": "最佳论文奖 · Technology for Good 2025（NUS CGS–腾讯）",
+          "url": "https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "2502.12956",
+      "slug": "ai-enabled-rent-seeking",
+      "group": "information",
+      "title": "AI-Enabled Rent-Seeking: How Generative AI Alters Market Transparency and Efficiency",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2025,
+      "first_posted": "2025-02-18",
+      "revised": "2025-02-18",
+      "abstract": "The rapid advancement of generative artificial intelligence (AI) has transformed the information environment, creating both opportunities and challenges. This paper explores how generative AI influences economic rent-seeking behavior and its broader impact on social welfare. We develop a dynamic economic model involving multiple agents who may engage in rent-seeking activities and a regulator aiming to mitigate social welfare losses. Our analysis reveals a dual effect of generative AI: while it reduces traditional information rents by increasing transparency, it also introduces new forms of rent-seeking, such as information manipulation and algorithmic interference. These behaviors can lead to decreased social welfare by exacerbating information asymmetries and misallocating resources. To address these challenges, we propose policy interventions, including taxation and regulatory measures. This study provides a new perspective on the economic implications of generative AI, offering valuable insights for policymakers and laying a foundation for future research on regulating AI-driven economic behaviors.",
+      "poster": "Rent-Seeking.pdf",
+      "question": {
+        "en": "When does AI improve transparency, and when does it enable manipulation?",
+        "zh": "AI 何时提高透明度，又何时助长操纵？"
+      },
+      "summary": {
+        "en": "Studies the tension between lower information rents and new opportunities for AI-enabled manipulation.",
+        "zh": "研究传统信息租金下降与 AI 带来的新型操纵机会之间的张力。"
+      },
+      "contribution": {
+        "en": "A dynamic model examines productive activity, rent-seeking, and regulation. Transparency gains may be offset by manipulation and algorithmic interference, motivating targeted policy interventions.",
+        "zh": "动态模型考察生产、寻租与监管。操纵和算法干扰可能抵消透明度收益，由此引出有针对性的政策干预。"
+      },
+      "scope": {
+        "en": "The welfare and policy conclusions concern the modeled strategic environment. They do not establish the prevalence or aggregate cost of these behaviors in real markets.",
+        "zh": "福利和政策结论针对模型中的策略环境，并未据此确定这些行为在真实市场中的普及程度或总体成本。"
+      },
+      "recognition": []
+    },
+    {
+      "number": 7,
+      "id": "2502.12969",
+      "slug": "information-asymmetry",
+      "group": "information",
+      "title": "Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard",
+      "authors": [
+        "Yukun Zhang",
+        "Tianyang Zhang"
+      ],
+      "year": 2025,
+      "first_posted": "2025-02-18",
+      "revised": "2025-02-18",
+      "abstract": "Information asymmetry often leads to adverse selection and moral hazard in economic markets, causing inefficiencies and welfare losses. Traditional methods to address these issues, such as signaling and screening, are frequently insufficient. This research investigates how Generative Artificial Intelligence (AI) can create detailed informational signals that help principals better understand agents' types and monitor their actions. By incorporating these AI-generated signals into a principal-agent model, the study aims to reduce inefficiencies and improve contract designs. Through theoretical analysis and simulations, we demonstrate that Generative AI can effectively mitigate adverse selection and moral hazard, resulting in more efficient market outcomes and increased social welfare. Additionally, the findings offer practical insights for policymakers and industry stakeholders on the responsible implementation of Generative AI solutions to enhance market performance.",
+      "poster": "How Generative AI Reshapes Principal  Agent Relationships Mitigating Adverse Selection and Moral Hazard.pdf",
+      "question": {
+        "en": "Can AI-generated signals improve screening and monitoring?",
+        "zh": "AI 生成的信息能否改善筛选和监督？"
+      },
+      "summary": {
+        "en": "Explores how richer informational signals can change adverse selection, moral hazard, and contract design.",
+        "zh": "探讨更丰富的信息信号如何改变逆向选择、道德风险和契约设计。"
+      },
+      "contribution": {
+        "en": "A principal–agent framework and simulations examine how AI-generated signals can help infer hidden types and monitor actions, improving outcomes under the modeled conditions.",
+        "zh": "委托代理框架与模拟考察 AI 信号如何帮助识别隐藏类型和监督行动，并在模型条件下改善结果。"
+      },
+      "scope": {
+        "en": "Benefits depend on the information supplied by the signals and the contracting environment. They do not imply that arbitrary AI-generated claims are reliable or that AI always reduces information asymmetry.",
+        "zh": "收益取决于信号提供的信息和契约环境，并不意味着任意 AI 生成内容都可靠，也不意味着 AI 总能减少信息不对称。"
+      },
+      "recognition": [
+        {
+          "en": "CADE 2025 · IET Conference Proceedings",
+          "zh": "CADE 2025 · IET 会议论文集",
+          "url": "https://doi.org/10.1049/icp.2025.2956"
+        }
+      ],
+      "doi": "10.1049/icp.2025.2956",
+      "published_title": "How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard"
+    }
+  ],
+  "updated": "2026-10-13",
+  "site_url": "https://yukunzhang1.github.io/research/ai-economics/",
+  "repo_url": "https://github.com/yukunzhang1/Generative-AI-Economic-Series"
+}
