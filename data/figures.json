@@ -1,0 +1,100 @@
+{
+  "digital-intelligence-capital": {
+    "path": "site-assets/images/digital-intelligence-capital.webp",
+    "width": 1613,
+    "height": 1289,
+    "alt": "The Red Queen effect: relative competition and the depreciation of digital intelligence capital.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "paper1_poster.pdf",
+      "git_blob_sha": "7727eed39c3fa2ddaec3a3eb7140e38032daf583",
+      "page": 1,
+      "xref": 30
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "quasi-public-goods": {
+    "path": "site-assets/images/quasi-public-goods.webp",
+    "width": 1712,
+    "height": 1216,
+    "alt": "Non-rivalry, non-excludability, and net externalities in the classification of large language models.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "The Beyond Private or Public.pdf",
+      "git_blob_sha": "61280ebedfcd303900d39448c81d1c024603329c",
+      "page": 1,
+      "xref": 36
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "non-convex-supply-shock": {
+    "path": "site-assets/images/non-convex-supply-shock.webp",
+    "width": 1600,
+    "height": 900,
+    "alt": "Mechanism linking generative AI cost shocks, market bifurcation, and welfare.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "Poster_Generative AI as a Non-Convex Supply Shock Market Bifurcation and Welfare Analysis.pdf",
+      "git_blob_sha": "21fa541c4e9f91b9bd14ffcdd5e113d3ab89b814",
+      "page": 1,
+      "xref": 35
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "content-platforms": {
+    "path": "site-assets/images/content-platforms.webp",
+    "width": 1000,
+    "height": 1000,
+    "alt": "Market segmentation between human and AI content across technical and creative quality.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "The Impact of Generative AI on Content Platforms.pdf",
+      "git_blob_sha": "5f480a58971f48c176213a7d81931655b846d830",
+      "page": 1,
+      "xref": 36
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "information-pollution": {
+    "path": "site-assets/images/information-pollution.webp",
+    "width": 1411,
+    "height": 1377,
+    "alt": "Information Pollution Index dimensions across policy scenarios.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "Poster AI Pollution Conference_Tech for Good_Driving Social Impact.pdf",
+      "git_blob_sha": "f7de2966e2599c88069caa9df99b5b05c078c86b",
+      "page": 1,
+      "xref": 39
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "ai-enabled-rent-seeking": {
+    "path": "site-assets/images/ai-enabled-rent-seeking.webp",
+    "width": 2302,
+    "height": 1661,
+    "alt": "Dual effects of generative AI on rent-seeking behavior and market transparency.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "Rent-Seeking.pdf",
+      "git_blob_sha": "b5eb1b28bea8bb73967abb614f4005827a758adb",
+      "page": 1,
+      "xref": 30
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  },
+  "information-asymmetry": {
+    "path": "site-assets/images/information-asymmetry.webp",
+    "width": 1409,
+    "height": 1090,
+    "alt": "Generative AI signals and improved contracts in principal-agent relationships.",
+    "source": {
+      "repository": "yukunzhang1/Generative-AI-Economic-Series",
+      "path": "How Generative AI Reshapes Principal  Agent Relationships Mitigating Adverse Selection and Moral Hazard.pdf",
+      "git_blob_sha": "751d74282edca58183034100435205e100dad6f1",
+      "page": 1,
+      "xref": 43
+    },
+    "processing": "Original embedded figure, uncropped; converted to WebP."
+  }
+}

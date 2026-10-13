@@ -8,10 +8,13 @@ from datetime import date
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'data/papers.json').read_text())
+FIGURES = json.loads((ROOT / 'data/figures.json').read_text())
 STYLE_VERSION = hashlib.sha256((ROOT / 'site-assets/ai-economics.css').read_bytes()).hexdigest()[:12]
+SCRIPT_VERSION = hashlib.sha256((ROOT / 'site-assets/ai-economics.js').read_bytes()).hexdigest()[:12]
 E = html.escape
 HOME = 'https://yukunzhang1.github.io/'
 AGENT = HOME + 'research/ai-agent-economics/'
+LLM = HOME + 'research/llm-paper-series/'
 UPDATED = date.fromisoformat(DATA['updated'])
 UPDATED_LABEL = {'en': f'{UPDATED.day} {UPDATED:%B %Y}', 'zh': f'{UPDATED.year}年{UPDATED.month}月{UPDATED.day}日'}
 
@@ -91,6 +94,9 @@ def readme(lang):
 
 
 def paper_html(p):
+    figure = FIGURES[p['slug']]
+    group = next(g for g in DATA['groups'] if g['id'] == p['group'])
+    group_anchor = f'<span class="theme-anchor" id="{p["group"]}" aria-hidden="true"></span>' if next(item for item in DATA['papers'] if item['group'] == p['group']) == p else ''
     records = ''
     if p['recognition']:
         records = '<p class="paper-context">' + ' · '.join(link(r['url'], bilingual(r)) for r in p['recognition']) + '</p>'
@@ -99,9 +105,13 @@ def paper_html(p):
     if p.get('published_title'):
         note = '<p class="publication-note">' + bilingual('Published under the title: ', '出版版本题名：') + '<em>' + E(p['published_title']) + '</em>.</p>'
     return f'''<article class="paper" id="{p['slug']}" aria-labelledby="title-{p['slug']}">
-  <div class="paper-number" aria-hidden="true">{p['number']:02d}</div>
+  {group_anchor}
+  <a class="paper-image" href="{E(figure['path'])}" data-source="https://arxiv.org/abs/{p['id']}" aria-label="Enlarge figure: {E(p['title'], quote=True)}">
+    <img src="{E(figure['path'])}" width="{figure['width']}" height="{figure['height']}" alt="{E(figure['alt'], quote=True)}" loading="{'eager' if p['number'] == 1 else 'lazy'}" decoding="async">
+  </a>
   <div class="paper-body">
-    <h4 id="title-{p['slug']}">{link('https://arxiv.org/abs/' + p['id'], E(p['title']))}</h4>
+    <div class="paper-meta"><span class="topic">{bilingual(group)}</span></div>
+    <h3 id="title-{p['slug']}">{link('https://arxiv.org/abs/' + p['id'], E(p['title']))}</h3>
     {records}
     <p class="abstract-label">{bilingual('Abstract', '摘要（译文）')}</p>
     <p class="abstract" data-lang="en" lang="en">{E(abstract(p, 'en'))}</p>
@@ -113,60 +123,57 @@ def paper_html(p):
 
 
 def website():
-    sections = []
-    for i, g in enumerate(DATA['groups'], 1):
-        papers = '\n'.join(paper_html(p) for p in DATA['papers'] if p['group'] == g['id'])
-        sections.append(f'<section class="theme" id="{g["id"]}" aria-labelledby="heading-{g["id"]}"><h3 class="theme-heading" id="heading-{g["id"]}"><span aria-hidden="true">{i:02d}</span> {bilingual(g)}</h3>\n{papers}</section>')
+    papers = '\n'.join(paper_html(p) for p in DATA['papers'])
     themes = ''.join(link('#' + g['id'], bilingual(g)) for g in DATA['groups'])
-    navigation = ''.join(link('#' + target, bilingual(en, zh)) for target, en, zh in [('papers', 'Papers', '论文'), ('contact', 'Contact', '联系')])
     return f'''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#12313e">
-  <title>Generative AI Economics — A Research Series</title>
+  <meta name="theme-color" content="#fbf8f6">
+  <title>Generative AI Economics — Yukun Zhang &amp; Tianyang Zhang</title>
   <meta name="description" content="{E(DATA['description']['en'], quote=True)}">
   <meta property="og:title" content="Generative AI Economics">
   <meta property="og:description" content="Seven papers on capital, markets, and information, with full abstracts and academic activities.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{E(DATA['site_url'], quote=True)}">
+  <link rel="canonical" href="{E(DATA['site_url'], quote=True)}">
   <link rel="stylesheet" href="site-assets/ai-economics.css?v={STYLE_VERSION}">
-  <script src="site-assets/ai-economics.js" defer></script>
+  <script src="site-assets/ai-economics.js?v={SCRIPT_VERSION}" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#papers">{bilingual('Skip to papers', '跳至论文')}</a>
-  <nav class="masthead" aria-label="Main navigation"><div class="masthead-inner">
-    {link(HOME, 'Yukun Zhang', 'author-home')}
-    <div class="navigation">{navigation}<button class="language" type="button" aria-label="切换至中文" hidden>中文</button></div>
-  </div></nav>
-  <header class="series-header reading-column">
-    <p class="eyebrow">{bilingual('A research series', '经济学研究系列')}</p>
-    <h1>Generative AI <em>Economics</em></h1>
-    <p class="deck">{bilingual(DATA['research_question'])}</p>
-  </header>
-  <div class="metadata-band"><dl class="series-meta reading-column">
-    <div><dt>{bilingual('Authors', '作者')}</dt><dd>{link(HOME, 'Yukun Zhang')}<br>Tianyang Zhang</dd></div>
-    <div><dt>{bilingual('Research areas', '研究主题')}</dt><dd>{bilingual(DATA['subtitle'])}</dd></div>
-    <div><dt>{bilingual('Last updated', '最近更新')}</dt><dd><time datetime="{DATA['updated']}">{bilingual(UPDATED_LABEL)}</time></dd></div>
-  </dl></div>
-  <main>
-    <div class="introduction reading-column"><p>{bilingual(DATA['description'])}</p></div>
-    <section class="reading-column papers" id="papers" aria-labelledby="papers-title">
-      <h2 id="papers-title">{bilingual('Research papers', '系列论文')}</h2>
-      <p class="section-intro">{bilingual('The papers are arranged by research theme. Full abstracts appear below.', '论文按研究主题排列，以下直接展示每篇论文的完整摘要。')}</p>
-      <nav class="themes" aria-label="Research themes">{themes}</nav>
-      {''.join(sections)}
+  <header class="topbar"><nav class="wrap" aria-label="Main navigation">
+    {link(HOME, 'Yukun Zhang', 'home-link')}
+    <div class="toplinks">{link(AGENT, 'AI Agent Economics')}{link(LLM, 'LLM Paper Series')}<button class="language" type="button" aria-label="切换至中文" hidden>中文</button></div>
+  </nav></header>
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow">{bilingual('Research by Yukun Zhang & Tianyang Zhang', 'Yukun Zhang 与 Tianyang Zhang 的研究系列')}</p>
+      <h1>Generative AI Economics</h1>
+      <p class="lead">{bilingual(DATA['research_question'])}</p>
+      <p class="series-overview">{bilingual(DATA['description'])}</p>
+      <div class="hero-links">{link('#papers', bilingual('Research papers', '系列论文'))}{link('#contact', bilingual('Contact', '联系'))}</div>
+      <nav class="theme-links" aria-label="Research themes">{themes}</nav>
+    </header>
+    <section id="papers" aria-labelledby="papers-title">
+      <div class="section-head"><h2 id="papers-title">{bilingual('Research papers', '系列论文')}</h2><p>{bilingual('Seven papers', '七篇论文')}</p></div>
+      <div class="paper-list">{papers}</div>
     </section>
-    <section class="reading-column contact" id="contact" aria-labelledby="contact-title">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">{bilingual('Discussion & contact', '交流与联系')}</h2>
       <p>{bilingual('For questions and research discussions, contact the authors.', '欢迎就论文内容与研究合作联系作者。')}</p>
       <dl class="contacts"><div><dt>Yukun Zhang</dt><dd>{link('mailto:215010026@link.cuhk.edu.cn', '215010026@link.cuhk.edu.cn')}</dd></div><div><dt>Tianyang Zhang</dt><dd>{link('mailto:yc57317@connect.um.edu.mo', 'yc57317@connect.um.edu.mo')}</dd></div></dl>
     </section>
   </main>
-  <footer><div class="reading-column footer-inner"><p>Generative AI Economics</p><div class="footer-links">{link(HOME, bilingual('Academic homepage', '学术主页'))}{link(AGENT, 'AI Agent Economics')}{link(DATA['repo_url'], 'GitHub')}{link('#top', bilingual('Back to top ↑', '返回顶部 ↑'))}</div></div></footer>
+  <footer><div class="wrap"><p>Generative AI Economics</p><div class="footer-links">{link(HOME, bilingual('Academic homepage', '学术主页'))}{link(DATA['repo_url'], 'GitHub')}{link('#top', bilingual('Back to top ↑', '返回顶部 ↑'))}</div></div></footer>
+  <dialog class="image-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><p class="dialog-title" id="dialog-title"></p><button class="close-dialog" type="button" aria-label="Close figure / 关闭图片">×</button></div>
+    <img alt="">
+    <p class="figure-source"><a href="#papers">{bilingual('Read the paper', '阅读论文')}</a></p>
+  </dialog>
 </body>
 </html>'''
-
 
 def main():
     write(ROOT / 'README.md', readme('en'))

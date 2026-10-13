@@ -2,9 +2,13 @@
 
 `data/papers.json` is the source for the seven papers, their original English abstracts, Chinese translations, links, and sourced academic records.
 
-Run `python scripts/build.py` to regenerate `index.html`, both README files, and the seven existing Markdown reading pages. The static homepage follows a research-thread structure inspired by the [Distill Circuits overview](https://distill.pub/2020/circuits/): a compact masthead, a title and research question, an author metadata band, a narrow reading column, and numbered paper entries separated by fine rules. The implementation and writing are specific to this series; no Distill identity or publication status is implied.
+Run `python scripts/build.py` to regenerate `index.html`, both README files, and the seven existing Markdown reading pages. The static homepage shares the [LLM Paper Series](https://yukunzhang1.github.io/research/llm-paper-series/) visual language: a warm off-white background, muted rose typography, a compact introduction, and paper rows with a research figure on the left and the title, academic records, full abstract, and links on the right. On small phones each row becomes one column.
 
-All abstracts remain visible without expanding panels or visiting detail pages. English is readable without JavaScript; the small script only switches languages. The desktop number gutter becomes an inline number on small screens. Navigation links jump directly to papers or contact details.
+All abstracts remain visible without expanding panels or visiting detail pages. English and image links work without JavaScript. The script adds the language toggle (preserving the `ge-language` preference) and a keyboard-accessible figure dialog. Header links connect the personal homepage, AI Agent Economics, and LLM Paper Series. Existing paper and research-theme anchors remain valid.
+
+## Research figures
+
+`data/figures.json` records one existing research figure per paper, its accessible description, original dimensions, and source provenance. Figures are extracted from research posters already in this repository; each record includes the source file's Git blob SHA, PDF page, and image xref. The files in `site-assets/images/` preserve each complete figure, with WebP compression only. Do not generate or redraw research results. The figure dialog links to the associated paper; it does not claim that the image was extracted from the current arXiv PDF.
 
 ## Awards and academic activities
 
@@ -18,6 +22,6 @@ The homepage and both READMEs integrate short award, conference, and publication
 
 The public page uses `site-assets/ai-economics.css` and `site-assets/ai-economics.js`. There is no package installation or framework build. GitHub Pages can publish the `main` branch's root directory; `.nojekyll` keeps the HTML and assets unchanged. Configure that publishing source in the repository's Pages settings if it has not yet been enabled. GitHub's README renderer does not apply the website stylesheet.
 
-The generator adds a content hash to the stylesheet URL so that published layout changes refresh browser caches automatically. Run the generator after editing CSS as well as paper data.
+The generator adds content hashes to the stylesheet and script URLs so that published changes refresh browser caches automatically. Run the generator after editing CSS, JavaScript, figures, or paper data.
 
 Poster and citation-download links are intentionally absent from the website, READMEs, and reading pages. Original material files remain at their existing paths.
