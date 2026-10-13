@@ -4,13 +4,13 @@
 
 Run `python scripts/build.py` to regenerate `index.html`, both README files, and the seven existing Markdown reading pages. The static homepage follows a research-thread structure inspired by the [Distill Circuits overview](https://distill.pub/2020/circuits/): a compact masthead, a title and research question, an author metadata band, a narrow reading column, and numbered paper entries separated by fine rules. The implementation and writing are specific to this series; no Distill identity or publication status is implied.
 
-All abstracts remain visible without expanding panels or visiting detail pages. English is readable without JavaScript; the small script only switches languages. The desktop number gutter becomes an inline number on small screens. Navigation links jump directly to papers, awards and activities, or contact details.
+All abstracts remain visible without expanding panels or visiting detail pages. English is readable without JavaScript; the small script only switches languages. The desktop number gutter becomes an inline number on small screens. Navigation links jump directly to papers or contact details.
 
 ## Awards and academic activities
 
 The `recognition` array on each paper holds an award, conference activity, or publication record. Each record includes `kind`, a supported date and bilingual `date_label`, concise `en` and `zh` labels, bilingual `detail`, a source `url`, and a bilingual `source_label`. An optional `links` array provides additional supporting material. A year-only date is permitted when a more precise date has not been verified.
 
-The homepage and both READMEs place a compact, three-item summary immediately after the introduction and before the papers. `recognition_highlights()` in the generator groups the award, the two UNU conference records, and the CADE publication; source links come from the original records. Update this bilingual summary when new records are added. Short records remain near each relevant paper title, and the individual reading pages preserve full details. Add records only when a specific source supports them, and distinguish an award, a conference programme listing, and a formal publication. Keep a different conference presentation title explicit instead of implying that it is the arXiv title.
+The homepage and both READMEs integrate short award, conference, and publication links below each relevant abstract, alongside the manuscript links. There is no separate awards section or navigation item. The individual reading pages preserve full details. Add records only when a specific source supports them, and distinguish an award, a conference programme listing, and a formal publication. Keep a different conference presentation title explicit instead of implying that it is the arXiv title.
 
 `proceedings_url` adds a verified conference proceedings link alongside a paper's PDF and arXiv links. Original English abstracts must remain faithful to the source; label Chinese text as a translation.
 

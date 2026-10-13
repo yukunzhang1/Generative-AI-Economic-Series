@@ -64,39 +64,12 @@ def records_md(p, lang, detailed=False):
     return '\n'.join(lines)
 
 
-def recognition_highlights():
-    papers = {p['id']: p for p in DATA['papers']}
-    award = next(r for r in papers['2509.13729']['recognition'] if r['kind'] == 'award')
-    conference = papers['2509.13265']['recognition'][0]
-    publication = papers['2502.12969']['recognition'][0]
-    return [
-        ({'en': 'Best Paper Award · 2025', 'zh': '最佳论文奖 · 2025'},
-         {'en': 'Information Pollution — Tencent–CGS “Technology for Good” conference, NUS Business School.',
-          'zh': '信息污染论文获新加坡国立大学商学院腾讯–CGS“Technology for Good”会议最佳论文奖。'}, award),
-        ({'en': 'UNU Macau AI Conference · 2025', 'zh': '联合国大学澳门 AI 会议 · 2025'},
-         {'en': 'Conference programme includes the quasi-public goods paper and a related information-pollution presentation.',
-          'zh': '会议议程收录准公共品论文及信息污染相关研究报告。'}, conference),
-        ({'en': 'CADE · 2025', 'zh': 'CADE · 2025'},
-         {'en': 'Information Asymmetry — published in IET Conference Proceedings.',
-          'zh': '信息不对称论文发表于 IET 会议论文集。'}, publication),
-    ]
-
-
-def recognition_md(lang):
-    text = '<a id="recognition"></a>\n\n## ' + ('Awards & academic activities' if lang == 'en' else '奖项与学术活动') + '\n\n'
-    for title, summary, record in recognition_highlights():
-        sources = ' · '.join(f'[{label}]({url})' for label, url in record_sources(record, lang))
-        text += f'- **{title[lang]}** — {summary[lang]} {sources}\n'
-    return text + '\n'
-
-
 def readme(lang):
     en = lang == 'en'
     text = '# Generative AI Economics\n\n**' + DATA['research_question'][lang] + '**\n\nYukun Zhang · Tianyang Zhang\n\n'
     text += ('[中文](README.zh-CN.md)' if en else '[English](README.md)') + f' · [Academic homepage]({HOME})\n\n'
     text += DATA['description'][lang] + '\n\n'
-    text += ('[Research papers](#papers) · [Awards & academic activities](#recognition) · [Contact](#contact)' if en else '[系列论文](#papers) · [奖项与学术活动](#recognition) · [联系](#contact)') + '\n\n'
-    text += recognition_md(lang)
+    text += ('[Research papers](#papers) · [Contact](#contact)' if en else '[系列论文](#papers) · [联系](#contact)') + '\n\n'
     text += '<a id="papers"></a>\n\n## ' + ('Research papers' if en else '系列论文') + '\n\n'
     text += ' · '.join(f'[{g[lang]}](#{g["id"]})' for g in DATA['groups']) + '\n\n'
     for g in DATA['groups']:
@@ -105,10 +78,10 @@ def readme(lang):
             if p['group'] != g['id']:
                 continue
             text += f'<a id="{p["slug"]}"></a>\n\n#### {p["number"]:02d}. [{p["title"]}](https://arxiv.org/abs/{p["id"]})\n\n'
-            if p['recognition']:
-                text += records_md(p, lang) + '\n\n'
             text += '**' + ('Abstract' if en else '摘要（译文）') + '**\n\n' + abstract(p, lang) + '\n\n'
             text += md_resources(p, lang) + '\n\n'
+            if p['recognition']:
+                text += ' · '.join(f'[{r[lang]}]({r["url"]})' for r in p['recognition']) + '\n\n'
             if p.get('published_title'):
                 text += ('Published under the title: ' if en else '出版版本题名：') + '*' + p['published_title'] + '*.\n\n'
     text += '<a id="contact"></a>\n\n## ' + ('Contact' if en else '联系') + '\n\n'
@@ -120,10 +93,7 @@ def readme(lang):
 def paper_html(p):
     records = ''
     if p['recognition']:
-        records = '<ul class="paper-records">'
-        for r in p['recognition']:
-            records += f'<li class="record-{r["kind"]}">' + link(r['url'], bilingual(r)) + '</li>'
-        records += '</ul>'
+        records = '<p class="paper-context">' + ' · '.join(link(r['url'], bilingual(r)) for r in p['recognition']) + '</p>'
     links = ''.join(link(url, bilingual(en, zh)) for (en, url), (zh, _) in zip(resources(p, 'en'), resources(p, 'zh')))
     note = ''
     if p.get('published_title'):
@@ -132,22 +102,14 @@ def paper_html(p):
   <div class="paper-number" aria-hidden="true">{p['number']:02d}</div>
   <div class="paper-body">
     <h4 id="title-{p['slug']}">{link('https://arxiv.org/abs/' + p['id'], E(p['title']))}</h4>
-    {records}
     <p class="abstract-label">{bilingual('Abstract', '摘要（译文）')}</p>
     <p class="abstract" data-lang="en" lang="en">{E(abstract(p, 'en'))}</p>
     <p class="abstract" data-lang="zh" lang="zh-Hans">{E(abstract(p, 'zh'))}</p>
     <div class="paper-links">{links}</div>
+    {records}
     {note}
   </div>
 </article>'''
-
-
-def recognition_html():
-    rows = []
-    for title, summary, record in recognition_highlights():
-        sources = ' · '.join(link(url, bilingual(en, zh)) for (en, url), (zh, _) in zip(record_sources(record, 'en'), record_sources(record, 'zh')))
-        rows.append('<li><strong>' + bilingual(title) + '</strong><span class="highlight-summary">' + bilingual(summary) + ' <span class="highlight-sources">' + sources + '</span></span></li>')
-    return '<section class="reading-column recognition" id="recognition" aria-labelledby="recognition-title"><h2 id="recognition-title">' + bilingual('Awards & academic activities', '奖项与学术活动') + '</h2><ul class="recognition-highlights">' + '\n'.join(rows) + '</ul></section>'
 
 
 def website():
@@ -156,7 +118,7 @@ def website():
         papers = '\n'.join(paper_html(p) for p in DATA['papers'] if p['group'] == g['id'])
         sections.append(f'<section class="theme" id="{g["id"]}" aria-labelledby="heading-{g["id"]}"><h3 class="theme-heading" id="heading-{g["id"]}"><span aria-hidden="true">{i:02d}</span> {bilingual(g)}</h3>\n{papers}</section>')
     themes = ''.join(link('#' + g['id'], bilingual(g)) for g in DATA['groups'])
-    navigation = ''.join(link('#' + target, bilingual(en, zh)) for target, en, zh in [('papers', 'Papers', '论文'), ('recognition', 'Awards & events', '奖项与活动'), ('contact', 'Contact', '联系')])
+    navigation = ''.join(link('#' + target, bilingual(en, zh)) for target, en, zh in [('papers', 'Papers', '论文'), ('contact', 'Contact', '联系')])
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -189,7 +151,6 @@ def website():
   </dl></div>
   <main>
     <div class="introduction reading-column"><p>{bilingual(DATA['description'])}</p></div>
-    {recognition_html()}
     <section class="reading-column papers" id="papers" aria-labelledby="papers-title">
       <h2 id="papers-title">{bilingual('Research papers', '系列论文')}</h2>
       <p class="section-intro">{bilingual('The papers are arranged by research theme. Full abstracts appear below.', '论文按研究主题排列，以下直接展示每篇论文的完整摘要。')}</p>
