@@ -4,7 +4,7 @@
 
 Yukun Zhang · Tianyang Zhang
 
-[Paper PDF](https://arxiv.org/pdf/2601.12339) · [arXiv](https://arxiv.org/abs/2601.12339)
+[Read paper PDF](https://arxiv.org/pdf/2601.12339) · [arXiv](https://arxiv.org/abs/2601.12339)
 
 ## Abstract
 

@@ -105,9 +105,23 @@
       },
       "recognition": [
         {
-          "en": "UNU Macau AI Conference 2025 · conference programme",
-          "zh": "联合国大学澳门 AI 会议 2025 · 会议议程",
-          "url": "https://unu.edu/macau/event/ai-equitable-governance"
+          "kind": "presentation",
+          "date": "2025-10-24",
+          "date_label": {
+            "en": "24 October 2025",
+            "zh": "2025年10月24日"
+          },
+          "en": "UNU Macau AI Conference 2025 · AI + Equitable Governance",
+          "zh": "联合国大学澳门 AI 会议 2025 · AI + Equitable Governance",
+          "detail": {
+            "en": "Yukun Zhang and Tianyang Zhang are listed in the conference programme with “Beyond Private or Public: Large Language Models as Quasi-Public Goods for Equitable AI Access”.",
+            "zh": "会议议程列有 Yukun Zhang 与 Tianyang Zhang，报告题名为“Beyond Private or Public: Large Language Models as Quasi-Public Goods for Equitable AI Access”。"
+          },
+          "url": "https://unu.edu/macau/event/ai-equitable-governance",
+          "source_label": {
+            "en": "Conference programme",
+            "zh": "会议议程"
+          }
         }
       ],
       "abstract_zh": "本文将大语言模型（LLM）概念化为数字基础设施中的一种混合公共品，并通过综合理论框架分析其经济属性。我们建立数学模型，量化大语言模型的非竞争性、部分排他性和正外部性。通过比较开源与闭源发展路径，识别两者在资源配置效率、创新轨迹和使用公平性方面的系统性差异。我们的实证研究评估了大语言模型在知识传播、创新加速和产业转型等不同领域的溢出效应与网络外部性。在这些发现的基础上，我们提出兼顾创新激励与公平使用的政策建议，包括公私合作机制、计算资源的普惠化，以及优化社会福利的治理结构。这一跨学科研究有助于理解基础 AI 模型的经济性质，并为其作为关键数字基础设施的发展提供政策指导。"
@@ -213,12 +227,53 @@
       },
       "recognition": [
         {
-          "en": "Best Paper Award · Technology for Good 2025 (NUS CGS–Tencent)",
-          "zh": "最佳论文奖 · Technology for Good 2025（NUS CGS–腾讯）",
-          "url": "https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/"
+          "kind": "award",
+          "date": "2025-11-19",
+          "date_label": {
+            "en": "19 November 2025",
+            "zh": "2025年11月19日"
+          },
+          "en": "Best Paper Award · Technology for Good: Driving Social Impact",
+          "zh": "最佳论文奖 · Technology for Good: Driving Social Impact",
+          "detail": {
+            "en": "Awarded to Yukun Zhang and Tianyang Zhang at the Tencent–CGS Academic Conference, NUS Business School. The paper also appears in Volume I of the conference proceedings, pp. 168–196 (December 2025).",
+            "zh": "Yukun Zhang 与 Tianyang Zhang 在新加坡国立大学商学院举办的腾讯–CGS 学术会议上获得最佳论文奖。论文同时收录于2025年12月出版的会议论文集第一卷，第168–196页。"
+          },
+          "url": "https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/",
+          "source_label": {
+            "en": "Award announcement",
+            "zh": "获奖公告"
+          },
+          "links": [
+            {
+              "en": "Conference proceedings",
+              "zh": "会议论文集",
+              "url": "https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf"
+            }
+          ]
+        },
+        {
+          "kind": "presentation",
+          "date": "2025-10-24",
+          "date_label": {
+            "en": "24 October 2025",
+            "zh": "2025年10月24日"
+          },
+          "en": "UNU Macau AI Conference 2025 · related information-pollution presentation",
+          "zh": "联合国大学澳门 AI 会议 2025 · 信息污染相关研究报告",
+          "detail": {
+            "en": "The programme lists Yukun Zhang with “Bridging the Digital Divide: A Hybrid Economic–Technical Framework for Mitigating Information Pollution in AI-Driven Ecosystems”. This is a related conference presentation under a different title.",
+            "zh": "会议议程列有 Yukun Zhang 的报告“Bridging the Digital Divide: A Hybrid Economic–Technical Framework for Mitigating Information Pollution in AI-Driven Ecosystems”。这是以不同题名列出的信息污染相关研究报告。"
+          },
+          "url": "https://unu.edu/macau/event/ai-equitable-governance",
+          "source_label": {
+            "en": "Conference programme",
+            "zh": "会议议程"
+          }
         }
       ],
-      "abstract_zh": "大语言模型（LLM）的出现对信息生产的经济机制构成了根本性冲击。AI 非对称地大幅降低了低质量合成内容的边际生成成本，而高质量生产仍然成本高昂，从而系统性地激励信息污染。本文构建一般均衡框架来分析这一问题。我们通过一个三阶段博弈，刻画垄断平台、利润最大化的生产者与效用最大化的消费者之间的战略互动。模型的核心是一种具有不同替代弹性的生产技术（σ_L > 1 > σ_H），形式化地表达了以下认识：在低质量生产中，AI 替代劳动；在高质量创作中，AI 则与劳动互补。我们证明了唯一“污染信息均衡”的存在，并揭示其低效率源于三重市场失灵：生产外部性、平台治理失灵和信息公地外部性。在方法上，我们推导了一个具有理论基础、采用内生福利权重的信息污染指数（IPI），用于衡量生态系统的健康状况。在政策上，我们表明，实现第一最优结果需要一组分别针对各类失灵的政策工具。最后，考虑到深度不确定性带来的挑战，我们主张采用适应性治理框架，根据实时 IPI 指标动态调整政策工具，为 AI 时代的信息市场监管提供稳健的政策蓝图。"
+      "abstract_zh": "大语言模型（LLM）的出现对信息生产的经济机制构成了根本性冲击。AI 非对称地大幅降低了低质量合成内容的边际生成成本，而高质量生产仍然成本高昂，从而系统性地激励信息污染。本文构建一般均衡框架来分析这一问题。我们通过一个三阶段博弈，刻画垄断平台、利润最大化的生产者与效用最大化的消费者之间的战略互动。模型的核心是一种具有不同替代弹性的生产技术（σ_L > 1 > σ_H），形式化地表达了以下认识：在低质量生产中，AI 替代劳动；在高质量创作中，AI 则与劳动互补。我们证明了唯一“污染信息均衡”的存在，并揭示其低效率源于三重市场失灵：生产外部性、平台治理失灵和信息公地外部性。在方法上，我们推导了一个具有理论基础、采用内生福利权重的信息污染指数（IPI），用于衡量生态系统的健康状况。在政策上，我们表明，实现第一最优结果需要一组分别针对各类失灵的政策工具。最后，考虑到深度不确定性带来的挑战，我们主张采用适应性治理框架，根据实时 IPI 指标动态调整政策工具，为 AI 时代的信息市场监管提供稳健的政策蓝图。",
+      "proceedings_url": "https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf"
     },
     {
       "number": 6,
@@ -287,9 +342,23 @@
       },
       "recognition": [
         {
+          "kind": "publication",
+          "date": "2025",
+          "date_label": {
+            "en": "2025",
+            "zh": "2025年"
+          },
           "en": "CADE 2025 · IET Conference Proceedings",
           "zh": "CADE 2025 · IET 会议论文集",
-          "url": "https://doi.org/10.1049/icp.2025.2956"
+          "detail": {
+            "en": "Conference publication under the title “How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard”.",
+            "zh": "以“How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard”为题出版。"
+          },
+          "url": "https://doi.org/10.1049/icp.2025.2956",
+          "source_label": {
+            "en": "Published version",
+            "zh": "出版版本"
+          }
         }
       ],
       "doi": "10.1049/icp.2025.2956",
@@ -299,5 +368,9 @@
   ],
   "updated": "2026-10-13",
   "site_url": "https://yukunzhang1.github.io/Generative-AI-Economic-Series/",
-  "repo_url": "https://github.com/yukunzhang1/Generative-AI-Economic-Series"
+  "repo_url": "https://github.com/yukunzhang1/Generative-AI-Economic-Series",
+  "research_question": {
+    "en": "How does generative AI reshape capital, markets, and information?",
+    "zh": "生成式 AI 如何重塑资本、市场与信息？"
+  }
 }
