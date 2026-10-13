@@ -1,188 +1,108 @@
 #!/usr/bin/env python3
-"""Build repository reading pages and optionally export the academic website."""
-import argparse
+"""Generate the single-page website and repository reading pages from papers.json."""
+from pathlib import Path
 import html
 import json
-from pathlib import Path
-from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
-D = json.loads((ROOT / 'data/papers.json').read_text())
-BASE = D['site_url']
-REPO = D['repo_url']
-ESC = html.escape
+DATA = json.loads((ROOT / 'data/papers.json').read_text())
+E = html.escape
+HOME = 'https://yukunzhang1.github.io/'
+AGENT = HOME + 'research/ai-agent-economics/'
+
 
 def write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text.rstrip() + '\n')
 
-def citation(p):
-    return ('@misc{zhang' + str(p['year']) + p['slug'].replace('-', '') + ',\n'
-            '  title = {{' + p['title'] + '}},\n'
-            '  author = {Zhang, Yukun and Zhang, Tianyang},\n'
-            '  year = {' + str(p['year']) + '},\n'
-            '  eprint = {' + p['id'] + '},\n'
-            '  archivePrefix = {arXiv},\n'
-            '  url = {https://arxiv.org/abs/' + p['id'] + '}\n}')
 
-def poster(p):
-    return REPO + '/blob/main/' + quote(p['poster'])
-
-def bi(en, zh=None):
+def bilingual(en, zh=None):
     if isinstance(en, dict):
         en, zh = en['en'], en['zh']
-    return '<span data-ge-lang="en">' + ESC(en) + '</span><span data-ge-lang="zh">' + ESC(zh) + '</span>'
+    return '<span data-lang="en">' + E(en) + '</span><span data-lang="zh" lang="zh-Hans">' + E(zh) + '</span>'
 
-def link(url, label, internal=False, cls=''):
-    attrs = 'target="_self"' if internal else 'target="_blank" rel="noopener noreferrer"'
-    return f'<a class="{cls}" href="{ESC(url, quote=True)}" {attrs}>{label}</a>'
 
-def links(p, detail=False):
-    parts = []
-    if not detail:
-        parts.append(link('/research/ai-economics/' + p['slug'] + '/', bi('Read overview', '阅读介绍'), True))
-    parts += [link('https://arxiv.org/abs/' + p['id'], 'arXiv'), link(poster(p), bi('Poster', '海报'))]
+def abstract(p, lang):
+    return p['abstract' if lang == 'en' else 'abstract_zh'].replace(r'\sigma_L > 1 > \sigma_H', 'σ_L > 1 > σ_H')
+
+
+def resources(p, lang):
+    links = [('Paper PDF' if lang == 'en' else '论文 PDF', 'https://arxiv.org/pdf/' + p['id']), ('arXiv', 'https://arxiv.org/abs/' + p['id'])]
     if p.get('doi'):
-        parts.append(link('https://doi.org/' + p['doi'], bi('Published version', '出版版本')))
-    if detail:
-        parts.append(link('#citation', 'BibTeX', True))
-    return '<div class="ge-links">' + ''.join(parts) + '</div>'
+        links.append(('Published version' if lang == 'en' else '出版版本', 'https://doi.org/' + p['doi']))
+    return links
 
-def recognition(p):
-    return ''.join('<p class="ge-recognition">' + link(r['url'], bi(r)) + '</p>' for r in p['recognition'])
 
-def frame(title, excerpt, path, body):
-    return ('---\nlayout: default\ntitle: ' + json.dumps(title) + '\nexcerpt: ' + json.dumps(excerpt) + '\n'
-            'permalink: ' + path + '\nauthor_profile: true\nresearch_styles: true\n---\n'
-            '<div class="ge-series" lang="en" data-ge-language="en">\n'
-            '<div class="ge-toolbar">' + link('/#ai-economics', bi('← All research', '← 返回学术主页'), True) +
-            '<button class="ge-language" type="button" aria-label="Switch language / 切换语言" hidden>中文</button></div>\n' + body +
-            '\n</div>\n<script src="{{ \'/assets/js/ai-economics.js\' | relative_url }}" defer></script>\n')
+def md_resources(p, lang):
+    return ' · '.join(f'[{label}]({url})' for label, url in resources(p, lang))
 
-def overview():
-    body = '<header class="ge-hero"><p class="ge-eyebrow">' + bi('Research series · Seven papers', '研究系列 · 七篇论文') + '</p>'
-    body += '<h1>Generative AI Economics</h1><p class="ge-subtitle">' + bi(D['subtitle']) + '</p><p class="ge-lead">' + bi(D['description']) + '</p>'
-    body += '<div class="ge-links">' + link('#papers', bi('Explore the papers', '阅读系列论文'), True) + link(REPO, bi('Repository & materials', '仓库与材料')) + '</div></header>'
-    body += '<nav class="ge-themes" aria-label="Research themes">'
-    for g in D['groups']:
-        body += link('#' + g['id'], '<strong>' + bi(g) + '</strong><span>' + bi(g['question']) + '</span>', True)
-    body += '</nav><div id="papers">'
-    for g in D['groups']:
-        body += '<section class="ge-group" id="' + g['id'] + '"><h2>' + bi(g) + '</h2>'
-        for p in D['papers']:
+
+def records_md(p, lang):
+    records = [f'[{r[lang]}]({r["url"]})' for r in p['recognition']]
+    return '\n\n' + ' · '.join(records) if records else ''
+
+
+def readme(lang):
+    en = lang == 'en'
+    text = '# Generative AI Economics\n\n**' + DATA['subtitle'][lang] + '**\n\nYukun Zhang · Tianyang Zhang\n\n'
+    text += ('[中文](README.zh-CN.md)' if en else '[English](README.md)') + f' · [Academic homepage]({HOME})\n\n'
+    text += DATA['description'][lang] + '\n\n'
+    text += ' · '.join(f'[{g[lang]}](#{g["id"]})' for g in DATA['groups']) + '\n\n'
+    for i, g in enumerate(DATA['groups']):
+        text += f'<a id="{g["id"]}"></a>\n\n## {i+1}. {g[lang]}\n\n'
+        for p in DATA['papers']:
             if p['group'] != g['id']:
                 continue
-            body += '<article class="ge-paper"><span class="ge-number">' + str(p['number']).zfill(2) + '</span><div><h3>'
-            body += link('/research/ai-economics/' + p['slug'] + '/', ESC(p['title']), True) + '</h3>'
-            body += '<p>' + bi(p['summary']) + '</p>' + recognition(p) + links(p) + '</div></article>'
+            text += f'### {p["number"]}. [{p["title"]}](https://arxiv.org/abs/{p["id"]})\n\n'
+            text += md_resources(p, lang) + '\n\n**' + ('Abstract' if en else '摘要（译文）') + '**\n\n' + abstract(p, lang)
+            text += records_md(p, lang)
+            if p.get('published_title'):
+                text += '\n\n' + ('Published under the title: ' if en else '出版版本题名：') + '*' + p['published_title'] + '*.'
+            text += '\n\n'
+    text += '---\n\n' + ('**Contact**' if en else '**联系**') + '\n\n'
+    text += 'Yukun Zhang: [215010026@link.cuhk.edu.cn](mailto:215010026@link.cuhk.edu.cn)  \nTianyang Zhang: [yc57317@connect.um.edu.mo](mailto:yc57317@connect.um.edu.mo)\n\n'
+    text += f'[Academic homepage]({HOME}) · [AI Agent Economics]({AGENT})\n'
+    return text
+
+
+def website():
+    body = '<header class="series-header"><div class="topline"><a href="'+HOME+'">Yukun Zhang · '+bilingual('Academic homepage','学术主页')+'</a><button class="language" type="button" aria-label="切换至中文" hidden>中文</button></div><h1>Generative AI Economics</h1><p class="subtitle">'+bilingual(DATA['subtitle'])+'</p><p class="authors">Yukun Zhang <span aria-hidden="true">·</span> Tianyang Zhang</p><p class="introduction">'+bilingual(DATA['description'])+'</p></header>'
+    body += '<nav class="themes" aria-label="Research themes">'
+    labels=[('Capital & Infrastructure','资本与基础设施'),('Markets & Platforms','市场与平台'),('Information & Incentives','信息与激励')]
+    for g, names in zip(DATA['groups'], labels):
+        body += '<a href="#'+g['id']+'">'+bilingual(*names)+'</a>'
+    body += '</nav><main id="papers">'
+    for i, g in enumerate(DATA['groups']):
+        body += '<section class="theme" id="'+g['id']+'"><h2><span class="theme-number">'+['I','II','III'][i]+'.</span> '+bilingual(g)+'</h2>'
+        for p in DATA['papers']:
+            if p['group'] != g['id']:
+                continue
+            body += '<article class="paper" id="'+p['slug']+'"><h3><a href="https://arxiv.org/abs/'+p['id']+'" target="_blank" rel="noopener noreferrer">'+E(p['title'])+'</a></h3><div class="paper-links">'
+            for (en, url), (zh, _) in zip(resources(p, 'en'), resources(p, 'zh')):
+                body += '<a href="'+E(url,quote=True)+'" target="_blank" rel="noopener noreferrer">'+bilingual(en,zh)+'</a>'
+            body += '</div><p class="abstract-label">'+bilingual('Abstract','摘要（译文）')+'</p><p class="abstract" data-lang="en" lang="en">'+E(abstract(p,'en'))+'</p><p class="abstract" data-lang="zh" lang="zh-Hans">'+E(abstract(p,'zh'))+'</p>'
+            for r in p['recognition']:
+                body += '<p class="record"><a href="'+E(r['url'],quote=True)+'" target="_blank" rel="noopener noreferrer">'+bilingual(r)+'</a></p>'
+            if p.get('published_title'):
+                body += '<p class="publication-note">'+bilingual('Published under the title: ','出版版本题名：')+'<em>'+E(p['published_title'])+'</em>.</p>'
+            body += '</article>'
         body += '</section>'
-    body += '</div><section class="ge-footer"><h2>' + bi('Recognition & presentations', '学术认可与会议展示') + '</h2><ul>'
-    for p in D['papers']:
-        for r in p['recognition']:
-            body += '<li>' + link(r['url'], bi(r)) + '<br><span class="ge-muted">' + ESC(p['title'].split(':')[0]) + '</span></li>'
-    body += '</ul><h2>' + bi('About the series', '关于系列') + '</h2><p>' + bi('The papers share questions about costs, incentives, and welfare. Each develops its own model or computational setting; the thematic order is a reading guide rather than a single sequence of formal deductions.', '各篇共享有关成本、激励和福利的问题，但分别采用独立的模型或计算设定。主题顺序用于引导阅读，并不表示七篇构成一条统一的形式推导链。') + '</p>'
-    body += '<p>Yukun Zhang · Tianyang Zhang</p><div class="ge-links">' + link('mailto:215010026@link.cuhk.edu.cn', bi('Contact', '联系')) + link('/research/ai-agent-economics/', 'AI Agent Economics', True) + link('/files/ai-economics/CITATION.bib', bi('Download citations', '下载引用'), True) + '</div></section>'
-    return frame('Generative AI Economics', D['description']['en'], '/research/ai-economics/', body)
+    body += '</main><footer id="contact"><p><strong>'+bilingual('Contact','联系')+'</strong></p><p>Yukun Zhang · <a href="mailto:215010026@link.cuhk.edu.cn">215010026@link.cuhk.edu.cn</a><br>Tianyang Zhang · <a href="mailto:yc57317@connect.um.edu.mo">yc57317@connect.um.edu.mo</a></p><p class="footer-links"><a href="'+HOME+'">'+bilingual('Academic homepage','学术主页')+'</a><a href="'+AGENT+'">AI Agent Economics</a><a href="'+DATA['repo_url']+'">GitHub</a><a href="#top">'+bilingual('Back to top ↑','返回顶部 ↑')+'</a></p></footer>'
+    return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17354a"><title>Generative AI Economics — Capital, Markets, and Information</title><meta name="description" content="'+E(DATA['description']['en'],quote=True)+'"><meta property="og:title" content="Generative AI Economics"><meta property="og:description" content="Capital, Markets, and Information. Seven research papers by Yukun Zhang and Tianyang Zhang."><meta property="og:type" content="website"><link rel="stylesheet" href="site-assets/ai-economics.css"><script src="site-assets/ai-economics.js" defer></script></head><body id="top"><a class="skip-link" href="#papers">'+bilingual('Skip to papers','跳至论文')+'</a><div class="page">'+body+'</div></body></html>'
 
-def detail(p):
-    body = '<nav class="ge-breadcrumb" aria-label="Breadcrumb">' + link('/research/ai-economics/', bi('Generative AI Economics', '生成式 AI 经济学'), True) + ' / ' + str(p['number']).zfill(2) + '</nav>'
-    body += '<header class="ge-hero"><p class="ge-eyebrow">' + bi('Paper ' + str(p['number']) + ' of 7', '系列论文 ' + str(p['number']) + ' / 7') + '</p><h1 class="ge-detail-title">' + ESC(p['title']) + '</h1>'
-    body += '<p class="ge-muted">Yukun Zhang · Tianyang Zhang</p>' + recognition(p) + links(p, True) + '</header>'
-    for field, en, zh in [('question', 'Research question', '研究问题'), ('contribution', 'Main contribution', '主要贡献'), ('scope', 'Scope of the results', '结论范围')]:
-        body += '<section class="ge-prose"><h2>' + bi(en, zh) + '</h2><p>' + bi(p[field]) + '</p></section>'
-    # Preserve the original English abstract, with the one mathematical expression typeset.
-    abstract = ESC(p['abstract']).replace(r'\sigma_L &gt; 1 &gt; \sigma_H', 'σ<sub>L</sub> &gt; 1 &gt; σ<sub>H</sub>')
-    body += '<details class="ge-abstract"><summary>' + bi('Read the original English abstract', '阅读英文原始摘要') + '</summary><p lang="en">' + abstract + '</p>'
-    body += '<p class="ge-muted">' + link('https://arxiv.org/abs/' + p['id'], 'arXiv:' + p['id']) + ' · ' + bi('Metadata checked 13 October 2026', '元数据核对于 2026 年 10 月 13 日') + '</p></details>'
-    if p.get('published_title'):
-        body += '<p class="ge-publication-note">' + bi('The publication record uses the title: ', '出版版本使用以下题名：') + '<em>' + ESC(p['published_title']) + '</em>.</p>'
-    body += '<section id="citation" class="ge-citation"><h2>' + bi('Cite this paper', '引用论文') + '</h2><p class="ge-muted">' + bi('BibTeX for the arXiv version. Use the publisher’s citation for the published version.', '以下为 arXiv 版本引用；引用出版版本时，请使用出版方提供的书目信息。') + '</p>'
-    # Encode braces so Jekyll/Liquid preserves BibTeX title capitalization braces.
-    citation_html = ESC(citation(p)).replace('{', '&#123;').replace('}', '&#125;')
-    body += '<pre><code>' + citation_html + '</code></pre><button class="ge-copy" type="button" hidden>' + bi('Copy BibTeX', '复制 BibTeX') + '</button><span class="ge-copy-status" aria-live="polite"></span></section>'
-    body += '<nav class="ge-pagination" aria-label="Other papers">'
-    idx = p['number'] - 1
-    if idx > 0:
-        prev = D['papers'][idx - 1]
-        body += link('/research/ai-economics/' + prev['slug'] + '/', bi('← Previous paper', '← 上一篇'), True)
-    body += link('/research/ai-economics/', bi('All seven papers', '全部七篇论文'), True)
-    if idx < 6:
-        nxt = D['papers'][idx + 1]
-        body += link('/research/ai-economics/' + nxt['slug'] + '/', bi('Next paper →', '下一篇 →'), True)
-    body += '</nav>'
-    return frame(p['title'], p['summary']['en'], '/research/ai-economics/' + p['slug'] + '/', body)
-
-def build_repo():
-    bib = '\n\n'.join(citation(p) for p in D['papers']) + '\n'
-    write(ROOT / 'CITATION.bib', bib)
-    intro = '# Generative AI Economics\n\n**Capital, Markets, and Information**\n\n' + D['description']['en'] + '\n\n'
-    intro += f'**[Explore the academic website]({BASE})** · [中文简介](README.zh-CN.md) · [BibTeX](CITATION.bib) · [Author homepage](https://yukunzhang1.github.io/)\n\n'
-    intro += '## Research themes\n\n'
-    intro += '\n'.join('- **' + g['en'] + '.** ' + g['question']['en'] for g in D['groups']) + '\n\n'
-    intro += 'The papers offer complementary perspectives. Each uses its own assumptions and methods; their thematic order is a reading guide, not a single chain of formal deductions.\n\n## Papers\n\n'
-    for g in D['groups']:
-        intro += '### ' + g['en'] + '\n\n'
-        for p in D['papers']:
-            if p['group'] != g['id']:
-                continue
-            intro += f'**{p["number"]}. [{p["title"]}](papers/{p["slug"]}.md)**  \n{p["summary"]["en"]}\n\n'
-            intro += f'[arXiv](https://arxiv.org/abs/{p["id"]}) · [Poster]({quote(p["poster"])}) · [Overview]({BASE}{p["slug"]}/)'
-            if p.get('doi'):
-                intro += f' · [Published version](https://doi.org/{p["doi"]})'
-            intro += '\n\n'
-    intro += '## Recognition & presentations\n\n'
-    for p in D['papers']:
-        for rec in p['recognition']:
-            intro += '- **' + p['title'].split(':')[0] + '** — [' + rec['en'] + '](' + rec['url'] + ').\n'
-    intro += '\n## Materials & citation\n\nThe repository contains seven poster PDFs, per-paper reading pages, and a [BibTeX file](CITATION.bib) for the arXiv versions. Published versions are linked separately where available. Simulation code and replication datasets are not currently included.\n\nPlease cite the individual paper relevant to your work. Full abstracts, research questions, scope notes, and citation entries are available on each paper’s reading page.\n\n'
-    intro += '## Authors & contact\n\n**Yukun Zhang · Tianyang Zhang**\n\n[215010026@link.cuhk.edu.cn](mailto:215010026@link.cuhk.edu.cn) · [yc57317@connect.um.edu.mo](mailto:yc57317@connect.um.edu.mo)\n\nRelated series: [AI Agent Economics](https://yukunzhang1.github.io/research/ai-agent-economics/).\n\nMetadata checked: 13 October 2026. [Maintenance guide](MAINTAINING.md).\n'
-    write(ROOT / 'README.md', intro)
-    zh = '# 生成式 AI 经济学\n\n**资本、市场与信息**\n\n' + D['description']['zh'] + f'\n\n[访问学术专题主页]({BASE}) · [English](README.md) · [下载 BibTeX](CITATION.bib)\n\n'
-    for g in D['groups']:
-        zh += '## ' + g['zh'] + '\n\n' + g['question']['zh'] + '\n\n'
-        for p in D['papers']:
-            if p['group'] != g['id']:
-                continue
-            zh += f'**{p["number"]}. [{p["title"]}](papers/{p["slug"]}.md)**\n\n{p["summary"]["zh"]}\n\n[论文](https://arxiv.org/abs/{p["id"]}) · [海报]({quote(p["poster"])}) · [中英文介绍]({BASE}{p["slug"]}/)\n\n'
-    zh += '## 学术认可与会议展示\n\n'
-    for p in D['papers']:
-        for rec in p['recognition']:
-            zh += '- [' + rec['zh'] + '](' + rec['url'] + ') — ' + p['title'].split(':')[0] + '\n'
-    zh += '\n## 关于系列\n\n各篇采用独立的模型或计算设定。主题顺序用于引导阅读，并不表示七篇构成一条统一的形式推导链。仓库目前提供论文介绍、海报和 arXiv 版本引用文件，尚未包含模拟代码与复现数据。\n\n**Yukun Zhang · Tianyang Zhang**\n\n[个人学术主页](https://yukunzhang1.github.io/) · [AI Agent Economics](https://yukunzhang1.github.io/research/ai-agent-economics/)\n'
-    write(ROOT / 'README.zh-CN.md', zh)
-    for p in D['papers']:
-        text = '[← Series overview](../README.md) · [Academic website](' + BASE + p['slug'] + '/)\n\n# ' + p['title'] + '\n\nYukun Zhang · Tianyang Zhang\n\n'
-        text += f'[arXiv](https://arxiv.org/abs/{p["id"]}) · [Poster](../{quote(p["poster"])})'
-        if p.get('doi'):
-            text += f' · [Published version](https://doi.org/{p["doi"]})'
-        text += '\n\n'
-        for field, heading in [('question', 'Research question'), ('contribution', 'Main contribution'), ('scope', 'Scope of the results')]:
-            text += '## ' + heading + '\n\n' + p[field]['en'] + '\n\n'
-        text += '## Original abstract\n\n' + p['abstract'].replace(r'\sigma_L > 1 > \sigma_H', r'$\sigma_L > 1 > \sigma_H$') + '\n\n'
-        if p['recognition']:
-            text += '## Recognition & publication\n\n' + '\n'.join('[' + rec['en'] + '](' + rec['url'] + ')' for rec in p['recognition']) + '\n\n'
-        if p.get('published_title'):
-            text += 'The publication record uses the title *' + p['published_title'] + '*.\n\n'
-        text += '## Citation\n\nBibTeX for the arXiv version; use the publisher’s citation for the published version.\n\n```bibtex\n' + citation(p) + '\n```\n\n'
-        text += 'Metadata source: [arXiv](https://arxiv.org/abs/' + p['id'] + '), checked 13 October 2026.\n'
-        write(ROOT / 'papers' / (p['slug'] + '.md'), text)
-    return bib
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--site-root', type=Path, help='Local checkout of yukunzhang1.github.io')
-    args = parser.parse_args()
-    bib = build_repo()
-    if args.site_root:
-        site = args.site_root
-        write(site / '_pages/ai-economics.html', overview())
-        for p in D['papers']:
-            write(site / '_pages/ai-economics' / (p['slug'] + '.html'), detail(p))
-        write(site / 'files/ai-economics/CITATION.bib', bib)
-        for name in ['ai-economics.css', 'ai-economics.js']:
-            folder = 'css' if name.endswith('css') else 'js'
-            write(site / 'assets' / folder / name, (ROOT / 'site-assets' / name).read_text())
-    print('Built seven reading pages, bilingual README files, and BibTeX.' + (' Exported eight website pages.' if args.site_root else ''))
+    write(ROOT / 'README.md', readme('en'))
+    write(ROOT / 'README.zh-CN.md', readme('zh'))
+    write(ROOT / 'index.html', website())
+    for p in DATA['papers']:
+        text = '[← Series overview](../README.md)\n\n# ' + p['title'] + '\n\nYukun Zhang · Tianyang Zhang\n\n' + md_resources(p,'en') + '\n\n## Abstract\n\n' + abstract(p,'en') + records_md(p,'en')
+        if p.get('published_title'):
+            text += '\n\nPublished under the title: *' + p['published_title'] + '*.'
+        text += '\n\n## 中文摘要（译文）\n\n' + abstract(p,'zh')
+        write(ROOT / 'papers' / (p['slug']+'.md'), text)
+    print('Generated single-page website, two READMEs, and seven reading pages.')
+
 
 if __name__ == '__main__':
     main()
