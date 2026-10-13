@@ -78,10 +78,10 @@ def readme(lang):
             if p['group'] != g['id']:
                 continue
             text += f'<a id="{p["slug"]}"></a>\n\n#### {p["number"]:02d}. [{p["title"]}](https://arxiv.org/abs/{p["id"]})\n\n'
-            text += '**' + ('Abstract' if en else '摘要（译文）') + '**\n\n' + abstract(p, lang) + '\n\n'
-            text += md_resources(p, lang) + '\n\n'
             if p['recognition']:
                 text += ' · '.join(f'[{r[lang]}]({r["url"]})' for r in p['recognition']) + '\n\n'
+            text += '**' + ('Abstract' if en else '摘要（译文）') + '**\n\n' + abstract(p, lang) + '\n\n'
+            text += md_resources(p, lang) + '\n\n'
             if p.get('published_title'):
                 text += ('Published under the title: ' if en else '出版版本题名：') + '*' + p['published_title'] + '*.\n\n'
     text += '<a id="contact"></a>\n\n## ' + ('Contact' if en else '联系') + '\n\n'
@@ -102,11 +102,11 @@ def paper_html(p):
   <div class="paper-number" aria-hidden="true">{p['number']:02d}</div>
   <div class="paper-body">
     <h4 id="title-{p['slug']}">{link('https://arxiv.org/abs/' + p['id'], E(p['title']))}</h4>
+    {records}
     <p class="abstract-label">{bilingual('Abstract', '摘要（译文）')}</p>
     <p class="abstract" data-lang="en" lang="en">{E(abstract(p, 'en'))}</p>
     <p class="abstract" data-lang="zh" lang="zh-Hans">{E(abstract(p, 'zh'))}</p>
     <div class="paper-links">{links}</div>
-    {records}
     {note}
   </div>
 </article>'''

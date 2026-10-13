@@ -10,7 +10,7 @@ All abstracts remain visible without expanding panels or visiting detail pages. 
 
 The `recognition` array on each paper holds an award, conference activity, or publication record. Each record includes `kind`, a supported date and bilingual `date_label`, concise `en` and `zh` labels, bilingual `detail`, a source `url`, and a bilingual `source_label`. An optional `links` array provides additional supporting material. A year-only date is permitted when a more precise date has not been verified.
 
-The homepage and both READMEs integrate short award, conference, and publication links below each relevant abstract, alongside the manuscript links. There is no separate awards section or navigation item. The individual reading pages preserve full details. Add records only when a specific source supports them, and distinguish an award, a conference programme listing, and a formal publication. Keep a different conference presentation title explicit instead of implying that it is the arXiv title.
+The homepage and both READMEs integrate short award, conference, and publication links immediately below each relevant paper title, before its abstract. There is no separate awards section or navigation item. The individual reading pages preserve full details. Add records only when a specific source supports them, and distinguish an award, a conference programme listing, and a formal publication. Keep a different conference presentation title explicit instead of implying that it is the arXiv title.
 
 `proceedings_url` adds a verified conference proceedings link alongside a paper's PDF and arXiv links. Original English abstracts must remain faithful to the source; label Chinese text as a translation.
 

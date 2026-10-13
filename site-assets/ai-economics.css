@@ -59,7 +59,7 @@ h4 a { text-decoration: none; }
 .paper-links a { text-decoration: none; padding-block: 3px; }
 .paper-links a:hover { text-decoration: underline; }
 .paper-links a:first-child::before { content: '→ '; }
-.paper-context { margin-top: 14px; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.paper-context { margin-top: 12px; font-size: 12px; color: var(--muted); line-height: 1.8; }
 .paper-context a { color: #536874; text-decoration: none; }
 .paper-context a:hover { text-decoration: underline; }
 .publication-note { font-size: 12px; color: var(--muted); margin-top: 15px; line-height: 1.7; }

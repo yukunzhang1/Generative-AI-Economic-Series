@@ -34,13 +34,13 @@ This paper develops a micro-founded economic theory of the AI industry by modeli
 
 #### 02. [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](https://arxiv.org/abs/2509.13265)
 
+[UNU Macau AI Conference 2025 · AI + Equitable Governance](https://unu.edu/macau/event/ai-equitable-governance)
+
 **Abstract**
 
 This paper conceptualizes Large Language Models (LLMs) as a form of mixed public goods within digital infrastructure, analyzing their economic properties through a comprehensive theoretical framework. We develop mathematical models to quantify the non-rivalry characteristics, partial excludability, and positive externalities of LLMs. Through comparative analysis of open-source and closed-source development paths, we identify systematic differences in resource allocation efficiency, innovation trajectories, and access equity. Our empirical research evaluates the spillover effects and network externalities of LLMs across different domains, including knowledge diffusion, innovation acceleration, and industry transformation. Based on these findings, we propose policy recommendations for balancing innovation incentives with equitable access, including public-private partnership mechanisms, computational resource democratization, and governance structures that optimize social welfare. This interdisciplinary approach contributes to understanding the economic nature of foundation AI models and provides policy guidance for their development as critical digital infrastructure
 
 [Read paper PDF](https://arxiv.org/pdf/2509.13265) · [arXiv](https://arxiv.org/abs/2509.13265)
-
-[UNU Macau AI Conference 2025 · AI + Equitable Governance](https://unu.edu/macau/event/ai-equitable-governance)
 
 <a id="markets"></a>
 
@@ -74,13 +74,13 @@ This paper presents a unified computational framework to examine how generative 
 
 #### 05. [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](https://arxiv.org/abs/2509.13729)
 
+[Best Paper Award · Technology for Good: Driving Social Impact](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [UNU Macau AI Conference 2025 · related information-pollution presentation](https://unu.edu/macau/event/ai-equitable-governance)
+
 **Abstract**
 
 The advent of Large Language Models (LLMs) represents a fundamental shock to the economics of information production. By asymmetrically collapsing the marginal cost of generating low-quality, synthetic content while leaving high-quality production costly, AI systematically incentivizes information pollution. This paper develops a general equilibrium framework to analyze this challenge. We model the strategic interactions among a monopolistic platform, profit-maximizing producers, and utility-maximizing consumers in a three-stage game. The core of our model is a production technology with differential elasticities of substitution (σ_L > 1 > σ_H), which formalizes the insight that AI is a substitute for labor in low-quality production but a complement in high-quality creation. We prove the existence of a unique "Polluted Information Equilibrium" and demonstrate its inefficiency, which is driven by a threefold market failure: a production externality, a platform governance failure, and an information commons externality. Methodologically, we derive a theoretically-grounded Information Pollution Index (IPI) with endogenous welfare weights to measure ecosystem health. From a policy perspective, we show that a first-best outcome requires a portfolio of instruments targeting each failure. Finally, considering the challenges of deep uncertainty, we advocate for an adaptive governance framework where policy instruments are dynamically adjusted based on real-time IPI readings, offering a robust blueprint for regulating information markets in the age of AI.
 
 [Read paper PDF](https://arxiv.org/pdf/2509.13729) · [arXiv](https://arxiv.org/abs/2509.13729) · [Conference proceedings](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
-
-[Best Paper Award · Technology for Good: Driving Social Impact](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [UNU Macau AI Conference 2025 · related information-pollution presentation](https://unu.edu/macau/event/ai-equitable-governance)
 
 <a id="ai-enabled-rent-seeking"></a>
 
@@ -96,13 +96,13 @@ The rapid advancement of generative artificial intelligence (AI) has transformed
 
 #### 07. [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](https://arxiv.org/abs/2502.12969)
 
+[CADE 2025 · IET Conference Proceedings](https://doi.org/10.1049/icp.2025.2956)
+
 **Abstract**
 
 Information asymmetry often leads to adverse selection and moral hazard in economic markets, causing inefficiencies and welfare losses. Traditional methods to address these issues, such as signaling and screening, are frequently insufficient. This research investigates how Generative Artificial Intelligence (AI) can create detailed informational signals that help principals better understand agents' types and monitor their actions. By incorporating these AI-generated signals into a principal-agent model, the study aims to reduce inefficiencies and improve contract designs. Through theoretical analysis and simulations, we demonstrate that Generative AI can effectively mitigate adverse selection and moral hazard, resulting in more efficient market outcomes and increased social welfare. Additionally, the findings offer practical insights for policymakers and industry stakeholders on the responsible implementation of Generative AI solutions to enhance market performance.
 
 [Read paper PDF](https://arxiv.org/pdf/2502.12969) · [arXiv](https://arxiv.org/abs/2502.12969) · [Published version](https://doi.org/10.1049/icp.2025.2956)
-
-[CADE 2025 · IET Conference Proceedings](https://doi.org/10.1049/icp.2025.2956)
 
 Published under the title: *How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard*.
 

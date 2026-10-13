@@ -34,13 +34,13 @@ Yukun Zhang · Tianyang Zhang
 
 #### 02. [Beyond Private or Public: Large Language Models as Quasi-Public Goods in the AI Economy](https://arxiv.org/abs/2509.13265)
 
+[联合国大学澳门 AI 会议 2025 · AI + Equitable Governance](https://unu.edu/macau/event/ai-equitable-governance)
+
 **摘要（译文）**
 
 本文将大语言模型（LLM）概念化为数字基础设施中的一种混合公共品，并通过综合理论框架分析其经济属性。我们建立数学模型，量化大语言模型的非竞争性、部分排他性和正外部性。通过比较开源与闭源发展路径，识别两者在资源配置效率、创新轨迹和使用公平性方面的系统性差异。我们的实证研究评估了大语言模型在知识传播、创新加速和产业转型等不同领域的溢出效应与网络外部性。在这些发现的基础上，我们提出兼顾创新激励与公平使用的政策建议，包括公私合作机制、计算资源的普惠化，以及优化社会福利的治理结构。这一跨学科研究有助于理解基础 AI 模型的经济性质，并为其作为关键数字基础设施的发展提供政策指导。
 
 [阅读论文 PDF](https://arxiv.org/pdf/2509.13265) · [arXiv](https://arxiv.org/abs/2509.13265)
-
-[联合国大学澳门 AI 会议 2025 · AI + Equitable Governance](https://unu.edu/macau/event/ai-equitable-governance)
 
 <a id="markets"></a>
 
@@ -74,13 +74,13 @@ Yukun Zhang · Tianyang Zhang
 
 #### 05. [The Economics of Information Pollution in the Age of AI: General Equilibrium, Welfare, and Policy Design](https://arxiv.org/abs/2509.13729)
 
+[最佳论文奖 · Technology for Good: Driving Social Impact](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [联合国大学澳门 AI 会议 2025 · 信息污染相关研究报告](https://unu.edu/macau/event/ai-equitable-governance)
+
 **摘要（译文）**
 
 大语言模型（LLM）的出现对信息生产的经济机制构成了根本性冲击。AI 非对称地大幅降低了低质量合成内容的边际生成成本，而高质量生产仍然成本高昂，从而系统性地激励信息污染。本文构建一般均衡框架来分析这一问题。我们通过一个三阶段博弈，刻画垄断平台、利润最大化的生产者与效用最大化的消费者之间的战略互动。模型的核心是一种具有不同替代弹性的生产技术（σ_L > 1 > σ_H），形式化地表达了以下认识：在低质量生产中，AI 替代劳动；在高质量创作中，AI 则与劳动互补。我们证明了唯一“污染信息均衡”的存在，并揭示其低效率源于三重市场失灵：生产外部性、平台治理失灵和信息公地外部性。在方法上，我们推导了一个具有理论基础、采用内生福利权重的信息污染指数（IPI），用于衡量生态系统的健康状况。在政策上，我们表明，实现第一最优结果需要一组分别针对各类失灵的政策工具。最后，考虑到深度不确定性带来的挑战，我们主张采用适应性治理框架，根据实时 IPI 指标动态调整政策工具，为 AI 时代的信息市场监管提供稳健的政策蓝图。
 
 [阅读论文 PDF](https://arxiv.org/pdf/2509.13729) · [arXiv](https://arxiv.org/abs/2509.13729) · [会议论文集](https://bschool.nus.edu.sg/cgs/wp-content/uploads/sites/145/2026/01/Proceedings-of-Tencent-CGS-Academic-Conference-2025_Volume-I_Research-Papers-and-Commentaries.pdf)
-
-[最佳论文奖 · Technology for Good: Driving Social Impact](https://bschool.nus.edu.sg/cgs/cgs-and-tencent-come-together-to-spotlight-research-on-technology-for-good/) · [联合国大学澳门 AI 会议 2025 · 信息污染相关研究报告](https://unu.edu/macau/event/ai-equitable-governance)
 
 <a id="ai-enabled-rent-seeking"></a>
 
@@ -96,13 +96,13 @@ Yukun Zhang · Tianyang Zhang
 
 #### 07. [Generative AI and Information Asymmetry: Impacts on Adverse Selection and Moral Hazard](https://arxiv.org/abs/2502.12969)
 
+[CADE 2025 · IET 会议论文集](https://doi.org/10.1049/icp.2025.2956)
+
 **摘要（译文）**
 
 经济市场中的信息不对称经常导致逆向选择和道德风险，造成效率损失和福利下降。信号传递与筛选等传统应对方法往往不够充分。本研究考察生成式人工智能（AI）如何创造细致的信息信号，帮助委托人更好地理解代理人的类型并监督其行为。通过将这些 AI 生成的信号纳入委托代理模型，研究旨在减少低效率并改进契约设计。理论分析与模拟表明，生成式 AI 能够有效缓解逆向选择和道德风险，进而提高市场效率与社会福利。此外，研究结果还为政策制定者和行业参与者提供了实践启示，帮助其负责任地应用生成式 AI 方案以改善市场表现。
 
 [阅读论文 PDF](https://arxiv.org/pdf/2502.12969) · [arXiv](https://arxiv.org/abs/2502.12969) · [出版版本](https://doi.org/10.1049/icp.2025.2956)
-
-[CADE 2025 · IET 会议论文集](https://doi.org/10.1049/icp.2025.2956)
 
 出版版本题名：*How generative AI reshapes principal-agent relationships: mitigating adverse selection and moral hazard*.
 
