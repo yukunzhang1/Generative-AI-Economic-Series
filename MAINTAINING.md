@@ -4,7 +4,7 @@
 
 Run `python scripts/build.py` to regenerate `index.html`, both README files, and the seven existing Markdown reading pages. The static homepage shares the [LLM Paper Series](https://yukunzhang1.github.io/research/llm-paper-series/) visual language: a warm off-white background, muted rose typography, a compact introduction, and paper rows with a research figure on the left and the title, academic records, full abstract, and links on the right. On small phones each row becomes one column.
 
-All abstracts remain visible without expanding panels or visiting detail pages. English and image links work without JavaScript. The script adds the language toggle (preserving the `ge-language` preference) and a keyboard-accessible figure dialog. Header links connect the personal homepage, AI Agent Economics, and LLM Paper Series. Existing paper and research-theme anchors remain valid.
+All abstracts remain visible without expanding panels or visiting detail pages. English and image links work without JavaScript. The script adds the language toggle (preserving the `ge-language` preference) and a keyboard-accessible figure dialog. The page starts with the series title and a language toggle; there are no top navigation links or author byline above the title. Existing paper and research-theme anchors remain valid.
 
 ## Research figures
 

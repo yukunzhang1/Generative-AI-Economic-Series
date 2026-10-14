@@ -9,6 +9,7 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@media print{.topbar,.language,.hero-links,.image-dialog{display:none!important}body{background:white}.wrap{width:100%}.hero{padding-top:0}.paper{break-inside:avoid}.paper-links a{color:#333}}
 
 /* Series-specific content; shared visual language with LLM Paper Series. */
+.hero{position:relative}.hero-language{position:absolute;top:12px;right:0;border:0;padding:4px 0;text-align:right}
 .series-overview{max-width:920px;font-size:14px;line-height:1.8;color:var(--muted);margin-top:18px}
 .theme-links{display:flex;gap:9px 20px;flex-wrap:wrap;margin-top:26px;font-size:12px}
 .theme-links a{text-decoration:none;border-bottom:1px solid #d5c3c9}
@@ -21,5 +22,5 @@
 .contacts{display:flex;gap:18px 45px;flex-wrap:wrap;margin:17px 0 0;font-size:13px}
 .contacts dt{font-weight:600}.contacts dd{margin:3px 0 0}.contacts a{overflow-wrap:anywhere}
 .footer-links{display:flex;gap:10px 20px;flex-wrap:wrap}
-@media(max-width:720px){.abstract{font-size:13px}.series-overview{font-size:13px}}
+@media(max-width:720px){.abstract{font-size:13px}.series-overview{font-size:13px}.hero-language{top:4px}}
 @media(max-width:480px){.abstract{font-size:14px}.section-head{align-items:flex-start}.section-head>p{white-space:nowrap}}

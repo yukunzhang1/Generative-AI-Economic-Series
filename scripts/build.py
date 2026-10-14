@@ -14,7 +14,6 @@ SCRIPT_VERSION = hashlib.sha256((ROOT / 'site-assets/ai-economics.js').read_byte
 E = html.escape
 HOME = 'https://yukunzhang1.github.io/'
 AGENT = HOME + 'research/ai-agent-economics/'
-LLM = HOME + 'research/llm-paper-series/'
 UPDATED = date.fromisoformat(DATA['updated'])
 UPDATED_LABEL = {'en': f'{UPDATED.day} {UPDATED:%B %Y}', 'zh': f'{UPDATED.year}年{UPDATED.month}月{UPDATED.day}日'}
 
@@ -143,13 +142,9 @@ def website():
 </head>
 <body id="top">
   <a class="skip-link" href="#papers">{bilingual('Skip to papers', '跳至论文')}</a>
-  <header class="topbar"><nav class="wrap" aria-label="Main navigation">
-    {link(HOME, 'Yukun Zhang', 'home-link')}
-    <div class="toplinks">{link(AGENT, 'AI Agent Economics')}{link(LLM, 'LLM Paper Series')}<button class="language" type="button" aria-label="切换至中文" hidden>中文</button></div>
-  </nav></header>
   <main class="wrap">
     <header class="hero">
-      <p class="eyebrow">{bilingual('Research by Yukun Zhang & Tianyang Zhang', 'Yukun Zhang 与 Tianyang Zhang 的研究系列')}</p>
+      <button class="language hero-language" type="button" aria-label="切换至中文" hidden>中文</button>
       <h1>Generative AI Economics</h1>
       <p class="lead">{bilingual(DATA['research_question'])}</p>
       <p class="series-overview">{bilingual(DATA['description'])}</p>
